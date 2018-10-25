@@ -6,8 +6,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Global Lineage 2 Project</title>
-  <link rel="stylesheet" href="/app.a1f413e8.css">
-<script src="/app.a1f413e8.js"></script><link rel="stylesheet" href="/app.9a4fec0b.css"></head>
+  <!-- <link rel="stylesheet" href="css/app.css"> -->
+<link rel="stylesheet" href="/app.9a4fec0b.css"></head>
 
 <body>
   <div class="wrapper">
@@ -16,7 +16,7 @@
       <header class="header">
         <div class="topline">
           <div class="container topline__container">
-            <a href="#" class="logo topline__logo"><img src="/logo.a39540e5.png" srcset="/logo.a39540e5.png 1x,/logo@2x.cd576a19.png 2x" alt="E-Global logo Lineage 2 Project"></a>
+            <a href="#" class="logo topline__logo"><img src="/logo.a39540e5.png" class="logo__img" srcset="/logo.a39540e5.png 1x,/logo@2x.cd576a19.png 2x" alt="E-Global logo Lineage 2 Project"></a>
             <nav class="menu">
               <ul class="menu__ul">
                 <li class="menu__list menu__list--dropdown">
@@ -130,14 +130,13 @@
                         <input type="password" name="" id="custom-input__password" class="input" placeholder="Придумай сложный пароль" required="">
                         <div class="custom-input__eye"><img src="/eye.379b0fe5.png" draggable="false" alt="eye icon"></div>
                       </div>
-                      <p class="input-box__info"><svg width="5" height="14" viewbox="0 0 5 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.16712 10H0.833897C0.608159 10 0.412838 10.0721 0.247843 10.2159C0.0829854 10.3599 0.000488281 10.5302 0.000488281 10.7272V13.2726C0.000488281 13.4696 0.0829854 13.6401 0.247843 13.7842C0.412974 13.9279 0.608113 14 0.833897 14H4.1674C4.39277 14 4.58818 13.9279 4.75332 13.7842C4.91795 13.6401 5.00049 13.4696 5.00049 13.2726V10.7272C5.00049 10.5303 4.91781 10.3599 4.753 10.2159C4.58805 10.072 4.39263 10 4.16712 10Z" fill="#2B2B2B"></path>
-                          <path d="M4.80281 0.190824C4.66396 0.0637487 4.497 0 4.30172 0H0.699016C0.503894 0 0.337007 0.0637487 0.198079 0.190824C0.0592299 0.318075 -0.00642872 0.468827 0.00106385 0.642905L0.316225 8.35695C0.323718 8.53103 0.400576 8.68189 0.546996 8.80893C0.693338 8.93632 0.86409 9 1.05929 9H3.94184C4.13672 9 4.30744 8.93632 4.45413 8.80893C4.60044 8.68192 4.67706 8.53107 4.6849 8.35695L4.99987 0.642905C5.00768 0.468827 4.9417 0.318216 4.80281 0.190824Z" fill="#2B2B2B"></path>
-                        </svg>
-                        Пароль должен содержать не менее 8 символов</p>
                     </div>
                     <div class="input-box">
-                      <label><input type="checkbox"> Запомните меня</label>
+                        <label class="box">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Запомнить меня
+                        </label>
                     </div>
                     <button type="submit" class="button full-width user__button">Войти</button>
                     <a href="#" class="sublink">Забыли пароль?</a>
@@ -172,7 +171,7 @@
           <div class="screen">
             <h2 class="screen__title">Более 2 000 000 аккаунтов</h2>
             <p class="screen__subtitle">
-              Присоединяйся к нам
+              Присоединяйся к нам!
             </p>
           </div>
         </div>
@@ -223,10 +222,10 @@
             <div class="tabs__content active">
               <div class="tabs__column">
                 <div class="s-content">
-                  <span class="s-content__title">Запускается лишь 1 раз в 365 дней!</span>
+                  <span class="s-content__title">Запускается лишь <i class="big-number">1</i> раз в <i class="big-number">365</i> дней!</span>
                   <div class="s-content__timer">
-                    <div class="s-content__timer-title">Старт через</div>
-                    <div id="countdown" data-timer="2018-12-22">
+                    <div class="s-content__timer-title">Сервер запущен</div>
+                    <div id="countdown" data-timer="2018-10-25">
                       <div id="tiles"></div>
                       <div class="labels">
                         <li>Дней</li>
@@ -239,12 +238,10 @@
                   <p class="s-content__info"><b>Рейты :</b> Exp / Sp - x7, Adena - x5, Drop / Spoil - x3</p>
                   <p class="s-content__info"><b>Период ОБТ :</b> 18 -25 октября</p>
                   <p class="s-content__info"><b>Магазин :</b> ПА, клуб, стартовые наборы, сервисы.</p>
-                  <p class="s-content__info"><b>РМТ и СОФТ :</b> бессрочная блокировка персонажей.</p>
+                  <p class="s-content__info s-content__info--last"><b>РМТ и СОФТ :</b> бессрочная блокировка персонажей.</p>
                   <a href="#" class="button second">Подробнее</a><br>
 
-                  <div class="s-content__special">
-                    Все особенности сервера за 18 секунд!
-                    <a href="#" class="button">Посмотреть<i class="icon icon_next"></i></a>
+                  <div class="s-content__special">Все особенности сервера за <i class="big-number">18</i> секунд!<a href="#" class="button">Посмотреть<i class="icon icon_next"></i></a>
                   </div>
                 </div>
               </div>
@@ -278,94 +275,10 @@
               </div>
             </div>
             <div class="tabs__content">
-              <div class="tabs__column">
-                <div class="s-content">
-                  <span class="s-content__title">Запускается лишь 1 раз в 365 дней!</span>
-                  <p class="s-content__info"><b>Рейты :</b> Exp / Sp - x7, Adena - x5, Drop / Spoil - x3</p>
-                  <p class="s-content__info"><b>Период ОБТ :</b> 18 -25 октября</p>
-                  <p class="s-content__info"><b>Магазин :</b> ПА, клуб, стартовые наборы, сервисы.</p>
-                  <p class="s-content__info"><b>РМТ и СОФТ :</b> бессрочная блокировка персонажей.</p>
-                  <a href="#" class="button second">Подробнее</a><br>
 
-                  <div class="s-content__special">
-                    Все особенности сервера за 18 секунд!
-                    <a href="#" class="button">Посмотреть<i class="icon icon_next"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="tabs__column">
-                <div class="s-slider">
-                  <div class="s-slider__wrapper">
-                    <div class="s-slider__slide">
-                      <div class="s-slider__box" style="background-image: url('Rectangle.png');">
-                        <div class="s-slider__tooltip">
-                          CLAN UNITY
-                        </div>
-                        <div class="s-slider__info">
-                          Новый бафф <b>“Clan Unity”</b><br>
-                          автоматически накладывается каждые 5 минут<br>
-                          на персонажей в клане
-                        </div>
-                      </div>
-                    </div>
-                    <div class="s-slider__slide">
-                      <div class="s-slider__box" style="background-image: url('chartBg.jpg');">
-                        <div class="s-slider__tooltip">
-                          Статистика игроков онлайн
-                        </div>
-                        <div class="s-slider__chart">
-                          <canvas id="myChart" width="400" height="400"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="tabs__content">
-              <div class="tabs__column">
-                <div class="s-content">
-                  <span class="s-content__title">Запускается лишь 1 раз в 365 дней!</span>
-                  <p class="s-content__info"><b>Рейты :</b> Exp / Sp - x7, Adena - x5, Drop / Spoil - x3</p>
-                  <p class="s-content__info"><b>Период ОБТ :</b> 18 -25 октября</p>
-                  <p class="s-content__info"><b>Магазин :</b> ПА, клуб, стартовые наборы, сервисы.</p>
-                  <p class="s-content__info"><b>РМТ и СОФТ :</b> бессрочная блокировка персонажей.</p>
-                  <a href="#" class="button second">Подробнее</a><br>
 
-                  <div class="s-content__special">
-                    Все особенности сервера за 18 секунд!
-                    <a href="#" class="button">Посмотреть<i class="icon icon_next"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="tabs__column">
-                <div class="s-slider">
-                  <div class="s-slider__wrapper">
-                    <div class="s-slider__slide">
-                      <div class="s-slider__box" style="background-image: url('Rectangle.png');">
-                        <div class="s-slider__tooltip">
-                          CLAN UNITY
-                        </div>
-                        <div class="s-slider__info">
-                          Новый бафф <b>“Clan Unity”</b><br>
-                          автоматически накладывается каждые 5 минут<br>
-                          на персонажей в клане
-                        </div>
-                      </div>
-                    </div>
-                    <div class="s-slider__slide">
-                      <div class="s-slider__box" style="background-image: url('chartBg.jpg');">
-                        <div class="s-slider__tooltip">
-                          Статистика игроков онлайн
-                        </div>
-                        <div class="s-slider__chart">
-                          <canvas id="myChart" width="400" height="400"></canvas>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class="tabs">
@@ -448,7 +361,7 @@
               <div class="dwn-content">
                 <h2 class="dwn-content__title">Начни игру прямо сейчас!</h2>
                 <div class="dwn-content__main">
-                  <div class="dwn-content__column">
+                  <div class="dwn-content__column dwn-content__column--first">
                     <div class="dwn-content__item">
                       <span class="dwn-content__number">1</span>
                       <div class="dwn-content__sub">
@@ -485,11 +398,12 @@
                       <div class="dwn-content__sub"><span class="dwn-content__text">Запусти <i class="accent">E-Global.exe</i></span></div>
                     </div>
                   </div>
-                  <div class="dwn-content__column">
+                  <div class="dwn-content__column dwn-content__column--second">
                     <div class="dwn-content__item">
                       <span class="dwn-content__number">1</span>
                       <div class="dwn-content__sub">
                         <span class="dwn-content__bold">Уже есть клиент Gracia Final?</span>
+                        <span class="dwn-content__subtitle">Скачай наш патч и апдейтер</span>
                         <div class="dwn-content__buttons">
                           <a href="#" class="button">Скачать патч <i class="icon icon_download"></i></a>
                           <a href="#" class="button">Скачать апдейтер <i class="icon icon_download"></i></a>
@@ -501,7 +415,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="dwn-content__item">
+                    <div class="dwn-content__item dwn-content__item--margin">
                       <span class="dwn-content__number">2</span>
                       <div class="dwn-content__sub"><span class="dwn-content__text">Установи в корневую папку с игрой</span></div>
                     </div>
@@ -517,10 +431,15 @@
             </div>
             <div class="tabs__content">
               <div class="dwn-content">
-                <h2 class="dwn-content__title">Начни игру прямо сейчас!</h2>
+                <h2 class="dwn-content__title dwn-content__title--second">Купи игровую валюту!</h2>
+                <h3 class="dwn-content__desc"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.332 12.5713V23.9999H20.8876C21.7217 23.9999 22.3987 23.2685 22.3987 22.3673V12.5713H13.332Z" fill="#FF3B00"></path>
+                  <path d="M1.59961 12.5713V22.3673C1.59961 23.2685 2.2781 23.9999 3.11072 23.9999H10.6663V12.5713H1.59961Z" fill="#FF3B00"></path>
+                  <path d="M22.5 6.51714H17.754C18.0945 6.26338 18.387 6.01125 18.591 5.78533C19.8015 4.45759 19.8015 2.29653 18.591 0.968792C17.415 -0.324567 15.366 -0.321293 14.1915 0.968792C13.5405 1.68096 11.8155 4.58037 12.054 6.51714H11.946C12.183 4.58037 10.458 1.68096 9.8085 0.968792C8.6325 -0.321293 6.5835 -0.321293 5.409 0.968792C4.2 2.29653 4.2 4.45759 5.4075 5.78533C5.613 6.01125 5.9055 6.26338 6.246 6.51714H1.5C0.6735 6.51714 0 7.25222 0 8.1543V10.61C0 11.0619 0.336 11.4286 0.75 11.4286H10.5V8.1543H13.5V11.4286H23.25C23.664 11.4286 24 11.0619 24 10.61V8.1543C24 7.25222 23.328 6.51714 22.5 6.51714ZM10.4115 6.46311C10.4115 6.46311 10.3485 6.51714 10.134 6.51714C9.0975 6.51714 7.119 5.34166 6.4725 4.63113C5.844 3.94024 5.844 2.81387 6.4725 2.12299C6.777 1.78901 7.1805 1.60565 7.6095 1.60565C8.037 1.60565 8.4405 1.78901 8.745 2.12299C9.756 3.23299 10.761 6.06856 10.4115 6.46311ZM13.8645 6.51714C13.6515 6.51714 13.5885 6.46475 13.5885 6.46311C13.239 6.06856 14.244 3.23299 15.255 2.12299C15.8595 1.45667 16.917 1.45339 17.5275 2.12299C18.1575 2.81387 18.1575 3.94024 17.5275 4.63113C16.881 5.34166 14.9025 6.51714 13.8645 6.51714Z" fill="#FF3B00"></path>
+                  </svg> Получай подарки при покупке</h3>
                 <div class="dwn-content__main">
-                  <div class="dwn-content__column dwn-content__column--first">
-                    <form>
+                  <div class="dwn-content__column dwn-content__column--1">
+                    <form class="dwn-content__form-second">
                       <div class="input-box">
                         <p class="input-box__title">Сумма покупки</p>
                         <label class="input--e-coins"><input type="text" class="input input--e-coins input-box__input"></label>
@@ -547,7 +466,7 @@
                       <button type="submit" class="button full-width">Оплатить</button>
                     </form>
                   </div>
-                  <div class="dwn-content__column dwn-content__column--second">
+                  <div class="dwn-content__column dwn-content__column--2">
                     <h3 class="dwn-content__bold">Подарки при покупке от 500 E-Coins:</h3>
                     <div class="dwn-content__items">
                       <div class="dwn-content__item">
@@ -591,7 +510,9 @@
                     </div>
                     <div class="dwn-content__span">Купи еще <i class="accent">500 E-Coins</i> и получи больше!</div>
                   </div>
+                  
                 </div>
+                <a href="#" class="dwn-content__service">Нужна помощь? Напиши нам в <i>службу поддержки</i></a>
               </div>
 
             </div>
@@ -660,7 +581,7 @@
             NCSoft</div>
         </div>
         <div class="footer__bottom">
-
+          <img src="/pays.1eb7d3ec.png" alt="E-Global">
         </div>
       </div>
     </div>

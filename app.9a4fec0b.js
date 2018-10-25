@@ -169,7 +169,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\screen.jpg":[["screen.60860209.jpg","img\\screen.jpg"],"img\\screen.jpg"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.0ddd9cd3.png","img\\lineage-2-art.png"],"img\\lineage-2-art.png"],"./..\\img\\facebook.svg":[["facebook.d3e0977d.svg","img\\facebook.svg"],"img\\facebook.svg"],"./..\\img\\search.svg":[["search.a63d30ed.svg","img\\search.svg"],"img\\search.svg"],"./..\\img\\download.svg":[["download.106971ff.svg","img\\download.svg"],"img\\download.svg"],"./..\\img\\next.svg":[["next.b4f43693.svg","img\\next.svg"],"img\\next.svg"],"./..\\img\\dropdown.svg":[["dropdown.b55a384d.svg","img\\dropdown.svg"],"img\\dropdown.svg"],"./..\\img\\user.png":[["user.11c6f16f.png","img\\user.png"],"img\\user.png"],"./..\\img\\caleft.png":[["caleft.78a47b0f.png","img\\caleft.png"],"img\\caleft.png"],"./..\\img\\caright.png":[["caright.1568c72c.png","img\\caright.png"],"img\\caright.png"],"./..\\img\\timerbg.png":[["timerbg.d907396b.png","img\\timerbg.png"],"img\\timerbg.png"],"./..\\img\\screen2.jpg":[["screen2.c4c333df.jpg","img\\screen2.jpg"],"img\\screen2.jpg"],"./..\\img\\dual.png":[["dual.2b2d0f80.png","img\\dual.png"],"img\\dual.png"],"_css_loader":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js":[function(require,module,exports) {
+},{"./..\\img\\screen.jpg":[["screen.60860209.jpg","img\\screen.jpg"],"img\\screen.jpg"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.0ddd9cd3.png","img\\lineage-2-art.png"],"img\\lineage-2-art.png"],"./..\\img\\facebook.svg":[["facebook.d3e0977d.svg","img\\facebook.svg"],"img\\facebook.svg"],"./..\\img\\search.svg":[["search.a63d30ed.svg","img\\search.svg"],"img\\search.svg"],"./..\\img\\download.svg":[["download.106971ff.svg","img\\download.svg"],"img\\download.svg"],"./..\\img\\next.svg":[["next.b4f43693.svg","img\\next.svg"],"img\\next.svg"],"./..\\img\\dropdown.svg":[["dropdown.b55a384d.svg","img\\dropdown.svg"],"img\\dropdown.svg"],"./..\\img\\user.png":[["user.11c6f16f.png","img\\user.png"],"img\\user.png"],"./..\\img\\user2.png":[["user2.2ccb0721.png","img\\user2.png"],"img\\user2.png"],"./..\\img\\caleft.png":[["caleft.78a47b0f.png","img\\caleft.png"],"img\\caleft.png"],"./..\\img\\caright.png":[["caright.1568c72c.png","img\\caright.png"],"img\\caright.png"],"./..\\img\\timerbg.png":[["timerbg.d907396b.png","img\\timerbg.png"],"img\\timerbg.png"],"./..\\img\\recycle.svg":[["recycle.e3242b1a.svg","img\\recycle.svg"],"img\\recycle.svg"],"./..\\img\\screen2.jpg":[["screen2.c4c333df.jpg","img\\screen2.jpg"],"img\\screen2.jpg"],"./..\\img\\dual.png":[["dual.2b2d0f80.png","img\\dual.png"],"img\\dual.png"],"_css_loader":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -32793,9 +32793,9 @@ function countTimer() {
 
     getCountdown();
 
-    setInterval(function () {
-        getCountdown();
-    }, 1000);
+    // setInterval(function () {
+    //     getCountdown();
+    // }, 1000);
 
     function getCountdown() {
 
@@ -32803,14 +32803,20 @@ function countTimer() {
         var current_date = new Date().getTime();
         var seconds_left = (target_date - current_date) / 1000;
 
-        days = pad(parseInt(seconds_left / 86400));
-        seconds_left = seconds_left % 86400;
+        // days = pad(parseInt(seconds_left / 86400));
+        days = 0;
+        // seconds_left = seconds_left % 86400;
+        seconds_left = 0;
 
-        hours = pad(parseInt(seconds_left / 3600));
-        seconds_left = seconds_left % 3600;
+        // hours = pad(parseInt(seconds_left / 3600));
+        hours = 0;
+        // seconds_left = seconds_left % 3600;
+        seconds_left = 0;
 
-        minutes = pad(parseInt(seconds_left / 60));
-        seconds = pad(parseInt(seconds_left % 60));
+        // minutes = pad(parseInt(seconds_left / 60));
+        minutes = 0;
+        // seconds = pad(parseInt(seconds_left % 60));
+        seconds = 0;
 
         // format countdown string + set tag value
         countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
@@ -32940,12 +32946,29 @@ elem.addEventListener("click", function () {
 
 (0, _jquery2.default)('.user__login').click(function (event) {
     event.preventDefault();
+    var userLogin = (0, _jquery2.default)(this);
+    userLogin.addClass('user__login--active');
     (0, _jquery2.default)('.user__auth').toggleClass('active');
     (0, _jquery2.default)(document).mouseup(function (e) {
         var container = (0, _jquery2.default)(".user__auth");
         if (container.has(e.target).length === 0) {
             container.removeClass('active');
+            userLogin.removeClass('user__login--active');
         }
+    });
+});
+
+(0, _jquery2.default)('.custom-input').each(function () {
+    var customInput = (0, _jquery2.default)(this);
+
+    customInput.find('.custom-input__input').focus(function () {
+        customInput.find('.custom-input__add').addClass('custom-input__add--focused');
+        (0, _jquery2.default)(document).mouseup(function (e) {
+            var container = customInput;
+            if (container.has(e.target).length === 0) {
+                customInput.find('.custom-input__add').removeClass('custom-input__add--focused');
+            }
+        });
     });
 });
 },{"../scss/app.scss":"scss\\app.scss","jquery":"node_modules\\jquery\\dist\\jquery.js","slick-carousel":"node_modules\\slick-carousel\\slick\\slick.js","chart.js":"node_modules\\chart.js\\src\\chart.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
