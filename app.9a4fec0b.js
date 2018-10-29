@@ -169,7 +169,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\screen.jpg":[["screen.60860209.jpg","img\\screen.jpg"],"img\\screen.jpg"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.0ddd9cd3.png","img\\lineage-2-art.png"],"img\\lineage-2-art.png"],"./..\\img\\facebook.svg":[["facebook.d3e0977d.svg","img\\facebook.svg"],"img\\facebook.svg"],"./..\\img\\search.svg":[["search.a63d30ed.svg","img\\search.svg"],"img\\search.svg"],"./..\\img\\download.svg":[["download.106971ff.svg","img\\download.svg"],"img\\download.svg"],"./..\\img\\next.svg":[["next.b4f43693.svg","img\\next.svg"],"img\\next.svg"],"./..\\img\\dropdown.svg":[["dropdown.b55a384d.svg","img\\dropdown.svg"],"img\\dropdown.svg"],"./..\\img\\dropdownHover.svg":[["dropdownHover.0de0ffff.svg","img\\dropdownHover.svg"],"img\\dropdownHover.svg"],"./..\\img\\user.png":[["user.11c6f16f.png","img\\user.png"],"img\\user.png"],"./..\\img\\user2.png":[["user2.2ccb0721.png","img\\user2.png"],"img\\user2.png"],"./..\\img\\caleft.png":[["caleft.78a47b0f.png","img\\caleft.png"],"img\\caleft.png"],"./..\\img\\caright.png":[["caright.1568c72c.png","img\\caright.png"],"img\\caright.png"],"./..\\img\\tabDrop.svg":[["tabDrop.57b3b41d.svg","img\\tabDrop.svg"],"img\\tabDrop.svg"],"./..\\img\\timerbg.png":[["timerbg.d907396b.png","img\\timerbg.png"],"img\\timerbg.png"],"./..\\img\\recycle.svg":[["recycle.e3242b1a.svg","img\\recycle.svg"],"img\\recycle.svg"],"./..\\img\\screen2.jpg":[["screen2.c4c333df.jpg","img\\screen2.jpg"],"img\\screen2.jpg"],"./..\\img\\dual.png":[["dual.2b2d0f80.png","img\\dual.png"],"img\\dual.png"],"_css_loader":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js":[function(require,module,exports) {
+},{"./..\\img\\screen.jpg":[["screen.60860209.jpg","img\\screen.jpg"],"img\\screen.jpg"],"./..\\img\\dropblack.svg":[["dropblack.0a4a660e.svg","img\\dropblack.svg"],"img\\dropblack.svg"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.0ddd9cd3.png","img\\lineage-2-art.png"],"img\\lineage-2-art.png"],"./..\\img\\facebook.svg":[["facebook.d3e0977d.svg","img\\facebook.svg"],"img\\facebook.svg"],"./..\\img\\search.svg":[["search.a63d30ed.svg","img\\search.svg"],"img\\search.svg"],"./..\\img\\download.svg":[["download.106971ff.svg","img\\download.svg"],"img\\download.svg"],"./..\\img\\next.svg":[["next.b4f43693.svg","img\\next.svg"],"img\\next.svg"],"./..\\img\\dropdown.svg":[["dropdown.b55a384d.svg","img\\dropdown.svg"],"img\\dropdown.svg"],"./..\\img\\dropdownHover.svg":[["dropdownHover.0de0ffff.svg","img\\dropdownHover.svg"],"img\\dropdownHover.svg"],"./..\\img\\user.png":[["user.11c6f16f.png","img\\user.png"],"img\\user.png"],"./..\\img\\user2.png":[["user2.2ccb0721.png","img\\user2.png"],"img\\user2.png"],"./..\\img\\caleft.png":[["caleft.78a47b0f.png","img\\caleft.png"],"img\\caleft.png"],"./..\\img\\caright.png":[["caright.1568c72c.png","img\\caright.png"],"img\\caright.png"],"./..\\img\\tabDrop.svg":[["tabDrop.57b3b41d.svg","img\\tabDrop.svg"],"img\\tabDrop.svg"],"./..\\img\\timerbg.png":[["timerbg.d907396b.png","img\\timerbg.png"],"img\\timerbg.png"],"./..\\img\\recycle.svg":[["recycle.e3242b1a.svg","img\\recycle.svg"],"img\\recycle.svg"],"./..\\img\\screen2.jpg":[["screen2.c4c333df.jpg","img\\screen2.jpg"],"img\\screen2.jpg"],"./..\\img\\dual.png":[["dual.2b2d0f80.png","img\\dual.png"],"img\\dual.png"],"_css_loader":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -32709,6 +32709,37 @@ var _chart2 = _interopRequireDefault(_chart);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import {TweenMax} from 'gsap';
+// import Splitter from './lib/splitter';
+
+// let els = document.querySelectorAll(".split");
+// [].forEach.call(els, function(el) {
+// 	// outerHTML, thats *important*, no direct text nodes should be in parsed HTML
+// 	el.outerHTML = Splitter(el.outerHTML, '<span class="letter">$</span>');
+// });
+// // var text = $(".split");
+
+// // var split = new SplitText(text);
+
+// function random(min, max){
+// 	return (Math.random() * (max - min)) + min;
+// }
+
+// $('.letter').each(function(i){
+// 	TweenMax.from($(this), 2.5, {
+// 		opacity: 0,
+// 		// x: random(-500, 500),
+// 		// y: random(-500, 500),
+// 		// z: random(-500, 500),
+// 		scale: .1,
+// 		delay: i * .02,
+// 		yoyo: true,
+// 		repeat: -1,
+// 		repeatDelay: 10
+// 	});
+// });
+
+
 var overlay = (0, _jquery2.default)('.overlay');
 var ctx = document.getElementById("myChart");
 var myChart = new _chart2.default(ctx, {
@@ -32970,7 +33001,7 @@ elem.addEventListener("click", function () {
     });
 });
 
-(0, _jquery2.default)('.user__login').click(function (event) {
+(0, _jquery2.default)('.user__trigger').click(function (event) {
     event.preventDefault();
     var userLogin = (0, _jquery2.default)(this);
     userLogin.addClass('user__login--active');
@@ -33017,27 +33048,36 @@ mobileTrigger.click(function (event) {
     });
 });
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function () {
-    myFunction();
-};
+// // When the user scrolls the page, execute myFunction 
+// window.onscroll = function() {myFunction()};
 
-// Get the navbar
-var navbar = document.querySelector(".mobile-topline");
+// // Get the navbar
+// var navbar = document.querySelector(".mobile-topline");
+// var screen = document.querySelector(".screen");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+// // Get the offset position of the navbar
+// var sticky = screen.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-    if (window.pageYOffset > sticky) {
-        navbar.classList.add("sticky");
-        (0, _jquery2.default)('.wrapper').addClass('pt');
-    } else {
-        navbar.classList.remove("sticky");
-        (0, _jquery2.default)('.wrapper').removeClass('pt');
-    }
-}
+// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     navbar.classList.add("sticky")
+//     $('.wrapper').addClass('pt');
+//   } else {
+//     navbar.classList.remove("sticky");
+//     $('.wrapper').removeClass('pt');
+//   }
+// }
+
+(function () {
+    var mobileMenuDropdown = (0, _jquery2.default)('.mobile-menu__list--dropdown');
+    mobileMenuDropdown.each(function () {
+        (0, _jquery2.default)(this).click(function (event) {
+            event.preventDefault();
+            (0, _jquery2.default)(this).find('.mobile-menu__drop').toggleClass('mobile-menu__drop--active');
+        });
+    });
+})();
 },{"../scss/app.scss":"scss\\app.scss","jquery":"node_modules\\jquery\\dist\\jquery.js","slick-carousel":"node_modules\\slick-carousel\\slick\\slick.js","chart.js":"node_modules\\chart.js\\src\\chart.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -33067,7 +33107,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52921' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55623' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
