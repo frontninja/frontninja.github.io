@@ -1354,6 +1354,10 @@ body {
       letter-spacing: 0px;
       position: relative;
       left: -1px; }
+    .tab__content--coins {
+      background-image: url("coin1.3f7c717b.png"), url("coin2.c5966ae7.png");
+      background-position: left 75%, right 75%;
+      background-repeat: no-repeat, no-repeat; }
 
 @media (max-width: 1680px) {
   .tab__column + .tab__column {
@@ -1384,6 +1388,8 @@ body {
     .tab__content.active {
       margin-bottom: 25px;
       height: auto; }
+    .tab__content--coins {
+      background-image: none; }
   .tab__column + .tab__column {
     padding-left: 0px; }
   .tab__column {
@@ -1940,6 +1946,51 @@ body {
       font-size: 16px; }
     .screen-2__big {
       font-size: 20px; } }
+
+.textData {
+  position: relative;
+  display: inline-flex;
+  border-right: solid 4px white;
+  animation: blink forwards 0.65s infinite;
+  -webkit-animation: blink forwards 0.65s infinite; }
+
+#leftArm, #rightArm, #face {
+  display: inline-block;
+  transform: rotate(0deg);
+  color: #00A676; }
+
+#face {
+  color: #00A676; }
+
+@keyframes blink {
+  0% {
+    border-right: solid 4px white; }
+  33% {
+    border-right: solid 4px white; }
+  34% {
+    border-right: solid 4px rgba(255, 255, 255, 0); }
+  66% {
+    border-right: solid 4px rgba(255, 255, 255, 0); }
+  67% {
+    border-right: solid 4px white; }
+  100% {
+    border-right: solid 4px white; } }
+
+@keyframes leftarm {
+  10% {
+    transform: rotate(-20deg); }
+  30% {
+    transform: rotate(-20deg); }
+  50% {
+    transform: rotate(0deg); } }
+
+@keyframes rightarm {
+  10% {
+    transform: rotate(20deg); }
+  30% {
+    transform: rotate(20deg); }
+  50% {
+    transform: rotate(0deg); } }
 
 #countdown {
   width: 514px;

@@ -169,7 +169,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\screen.jpg":[["screen.60860209.jpg","img\\screen.jpg"],"img\\screen.jpg"],"./..\\img\\dropblack.svg":[["dropblack.0a4a660e.svg","img\\dropblack.svg"],"img\\dropblack.svg"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.0ddd9cd3.png","img\\lineage-2-art.png"],"img\\lineage-2-art.png"],"./..\\img\\facebook.svg":[["facebook.d3e0977d.svg","img\\facebook.svg"],"img\\facebook.svg"],"./..\\img\\search.svg":[["search.a63d30ed.svg","img\\search.svg"],"img\\search.svg"],"./..\\img\\download.svg":[["download.106971ff.svg","img\\download.svg"],"img\\download.svg"],"./..\\img\\next.svg":[["next.b4f43693.svg","img\\next.svg"],"img\\next.svg"],"./..\\img\\dropdown.svg":[["dropdown.b55a384d.svg","img\\dropdown.svg"],"img\\dropdown.svg"],"./..\\img\\dropdownHover.svg":[["dropdownHover.0de0ffff.svg","img\\dropdownHover.svg"],"img\\dropdownHover.svg"],"./..\\img\\user.png":[["user.11c6f16f.png","img\\user.png"],"img\\user.png"],"./..\\img\\user2.png":[["user2.2ccb0721.png","img\\user2.png"],"img\\user2.png"],"./..\\img\\caleft.png":[["caleft.78a47b0f.png","img\\caleft.png"],"img\\caleft.png"],"./..\\img\\caright.png":[["caright.1568c72c.png","img\\caright.png"],"img\\caright.png"],"./..\\img\\tabDrop.svg":[["tabDrop.57b3b41d.svg","img\\tabDrop.svg"],"img\\tabDrop.svg"],"./..\\img\\timerbg.png":[["timerbg.d907396b.png","img\\timerbg.png"],"img\\timerbg.png"],"./..\\img\\recycle.svg":[["recycle.e3242b1a.svg","img\\recycle.svg"],"img\\recycle.svg"],"./..\\img\\screen2.jpg":[["screen2.c4c333df.jpg","img\\screen2.jpg"],"img\\screen2.jpg"],"./..\\img\\dual.png":[["dual.2b2d0f80.png","img\\dual.png"],"img\\dual.png"],"_css_loader":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js":[function(require,module,exports) {
+},{"./..\\img\\screen.jpg":[["screen.60860209.jpg","img\\screen.jpg"],"img\\screen.jpg"],"./..\\img\\dropblack.svg":[["dropblack.0a4a660e.svg","img\\dropblack.svg"],"img\\dropblack.svg"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.0ddd9cd3.png","img\\lineage-2-art.png"],"img\\lineage-2-art.png"],"./..\\img\\facebook.svg":[["facebook.d3e0977d.svg","img\\facebook.svg"],"img\\facebook.svg"],"./..\\img\\search.svg":[["search.a63d30ed.svg","img\\search.svg"],"img\\search.svg"],"./..\\img\\download.svg":[["download.106971ff.svg","img\\download.svg"],"img\\download.svg"],"./..\\img\\next.svg":[["next.b4f43693.svg","img\\next.svg"],"img\\next.svg"],"./..\\img\\dropdown.svg":[["dropdown.b55a384d.svg","img\\dropdown.svg"],"img\\dropdown.svg"],"./..\\img\\dropdownHover.svg":[["dropdownHover.0de0ffff.svg","img\\dropdownHover.svg"],"img\\dropdownHover.svg"],"./..\\img\\user.png":[["user.11c6f16f.png","img\\user.png"],"img\\user.png"],"./..\\img\\user2.png":[["user2.2ccb0721.png","img\\user2.png"],"img\\user2.png"],"./..\\img\\caleft.png":[["caleft.78a47b0f.png","img\\caleft.png"],"img\\caleft.png"],"./..\\img\\caright.png":[["caright.1568c72c.png","img\\caright.png"],"img\\caright.png"],"./..\\img\\coin1.png":[["coin1.3f7c717b.png","img\\coin1.png"],"img\\coin1.png"],"./..\\img\\coin2.png":[["coin2.c5966ae7.png","img\\coin2.png"],"img\\coin2.png"],"./..\\img\\tabDrop.svg":[["tabDrop.57b3b41d.svg","img\\tabDrop.svg"],"img\\tabDrop.svg"],"./..\\img\\timerbg.png":[["timerbg.d907396b.png","img\\timerbg.png"],"img\\timerbg.png"],"./..\\img\\recycle.svg":[["recycle.e3242b1a.svg","img\\recycle.svg"],"img\\recycle.svg"],"./..\\img\\screen2.jpg":[["screen2.c4c333df.jpg","img\\screen2.jpg"],"img\\screen2.jpg"],"./..\\img\\dual.png":[["dual.2b2d0f80.png","img\\dual.png"],"img\\dual.png"],"_css_loader":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -32692,7 +32692,76 @@ Chart.canvasHelpers = Chart.helpers.canvas;
  */
 Chart.layoutService = Chart.layouts;
 
-},{"./core/core":"node_modules\\chart.js\\src\\core\\core.js","./helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","./core/core.helpers":"node_modules\\chart.js\\src\\core\\core.helpers.js","./core/core.animation":"node_modules\\chart.js\\src\\core\\core.animation.js","./core/core.animations":"node_modules\\chart.js\\src\\core\\core.animations.js","./core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","./core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","./elements/index":"node_modules\\chart.js\\src\\elements\\index.js","./core/core.interaction":"node_modules\\chart.js\\src\\core\\core.interaction.js","./core/core.layouts":"node_modules\\chart.js\\src\\core\\core.layouts.js","./platforms/platform":"node_modules\\chart.js\\src\\platforms\\platform.js","./core/core.plugins":"node_modules\\chart.js\\src\\core\\core.plugins.js","./core/core.scale":"node_modules\\chart.js\\src\\core\\core.scale.js","./core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js","./core/core.ticks":"node_modules\\chart.js\\src\\core\\core.ticks.js","./core/core.tooltip":"node_modules\\chart.js\\src\\core\\core.tooltip.js","./core/core.controller":"node_modules\\chart.js\\src\\core\\core.controller.js","./core/core.datasetController":"node_modules\\chart.js\\src\\core\\core.datasetController.js","./scales/scale.linearbase":"node_modules\\chart.js\\src\\scales\\scale.linearbase.js","./scales/scale.category":"node_modules\\chart.js\\src\\scales\\scale.category.js","./scales/scale.linear":"node_modules\\chart.js\\src\\scales\\scale.linear.js","./scales/scale.logarithmic":"node_modules\\chart.js\\src\\scales\\scale.logarithmic.js","./scales/scale.radialLinear":"node_modules\\chart.js\\src\\scales\\scale.radialLinear.js","./scales/scale.time":"node_modules\\chart.js\\src\\scales\\scale.time.js","./controllers/controller.bar":"node_modules\\chart.js\\src\\controllers\\controller.bar.js","./controllers/controller.bubble":"node_modules\\chart.js\\src\\controllers\\controller.bubble.js","./controllers/controller.doughnut":"node_modules\\chart.js\\src\\controllers\\controller.doughnut.js","./controllers/controller.line":"node_modules\\chart.js\\src\\controllers\\controller.line.js","./controllers/controller.polarArea":"node_modules\\chart.js\\src\\controllers\\controller.polarArea.js","./controllers/controller.radar":"node_modules\\chart.js\\src\\controllers\\controller.radar.js","./controllers/controller.scatter":"node_modules\\chart.js\\src\\controllers\\controller.scatter.js","./charts/Chart.Bar":"node_modules\\chart.js\\src\\charts\\Chart.Bar.js","./charts/Chart.Bubble":"node_modules\\chart.js\\src\\charts\\Chart.Bubble.js","./charts/Chart.Doughnut":"node_modules\\chart.js\\src\\charts\\Chart.Doughnut.js","./charts/Chart.Line":"node_modules\\chart.js\\src\\charts\\Chart.Line.js","./charts/Chart.PolarArea":"node_modules\\chart.js\\src\\charts\\Chart.PolarArea.js","./charts/Chart.Radar":"node_modules\\chart.js\\src\\charts\\Chart.Radar.js","./charts/Chart.Scatter":"node_modules\\chart.js\\src\\charts\\Chart.Scatter.js","./plugins":"node_modules\\chart.js\\src\\plugins\\index.js"}],"js\\app.js":[function(require,module,exports) {
+},{"./core/core":"node_modules\\chart.js\\src\\core\\core.js","./helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","./core/core.helpers":"node_modules\\chart.js\\src\\core\\core.helpers.js","./core/core.animation":"node_modules\\chart.js\\src\\core\\core.animation.js","./core/core.animations":"node_modules\\chart.js\\src\\core\\core.animations.js","./core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","./core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","./elements/index":"node_modules\\chart.js\\src\\elements\\index.js","./core/core.interaction":"node_modules\\chart.js\\src\\core\\core.interaction.js","./core/core.layouts":"node_modules\\chart.js\\src\\core\\core.layouts.js","./platforms/platform":"node_modules\\chart.js\\src\\platforms\\platform.js","./core/core.plugins":"node_modules\\chart.js\\src\\core\\core.plugins.js","./core/core.scale":"node_modules\\chart.js\\src\\core\\core.scale.js","./core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js","./core/core.ticks":"node_modules\\chart.js\\src\\core\\core.ticks.js","./core/core.tooltip":"node_modules\\chart.js\\src\\core\\core.tooltip.js","./core/core.controller":"node_modules\\chart.js\\src\\core\\core.controller.js","./core/core.datasetController":"node_modules\\chart.js\\src\\core\\core.datasetController.js","./scales/scale.linearbase":"node_modules\\chart.js\\src\\scales\\scale.linearbase.js","./scales/scale.category":"node_modules\\chart.js\\src\\scales\\scale.category.js","./scales/scale.linear":"node_modules\\chart.js\\src\\scales\\scale.linear.js","./scales/scale.logarithmic":"node_modules\\chart.js\\src\\scales\\scale.logarithmic.js","./scales/scale.radialLinear":"node_modules\\chart.js\\src\\scales\\scale.radialLinear.js","./scales/scale.time":"node_modules\\chart.js\\src\\scales\\scale.time.js","./controllers/controller.bar":"node_modules\\chart.js\\src\\controllers\\controller.bar.js","./controllers/controller.bubble":"node_modules\\chart.js\\src\\controllers\\controller.bubble.js","./controllers/controller.doughnut":"node_modules\\chart.js\\src\\controllers\\controller.doughnut.js","./controllers/controller.line":"node_modules\\chart.js\\src\\controllers\\controller.line.js","./controllers/controller.polarArea":"node_modules\\chart.js\\src\\controllers\\controller.polarArea.js","./controllers/controller.radar":"node_modules\\chart.js\\src\\controllers\\controller.radar.js","./controllers/controller.scatter":"node_modules\\chart.js\\src\\controllers\\controller.scatter.js","./charts/Chart.Bar":"node_modules\\chart.js\\src\\charts\\Chart.Bar.js","./charts/Chart.Bubble":"node_modules\\chart.js\\src\\charts\\Chart.Bubble.js","./charts/Chart.Doughnut":"node_modules\\chart.js\\src\\charts\\Chart.Doughnut.js","./charts/Chart.Line":"node_modules\\chart.js\\src\\charts\\Chart.Line.js","./charts/Chart.PolarArea":"node_modules\\chart.js\\src\\charts\\Chart.PolarArea.js","./charts/Chart.Radar":"node_modules\\chart.js\\src\\charts\\Chart.Radar.js","./charts/Chart.Scatter":"node_modules\\chart.js\\src\\charts\\Chart.Scatter.js","./plugins":"node_modules\\chart.js\\src\\plugins\\index.js"}],"js\\lib\\type.js":[function(require,module,exports) {
+if (window.addEventListener) // W3C standard
+    {
+        window.addEventListener('load', animate, false); // NB **not** 'onload'
+    } else if (window.attachEvent) // Microsoft
+    {
+        window.attachEvent('onload', animate);
+    }
+
+var delta = 800;
+var forwardDelta = 100;
+var backwardDetla = 75;
+var switchDelta = 800;
+
+function animate() {
+    var element = document.getElementsByClassName("textData")[0];
+    var elementData = JSON.parse(element.getAttribute("data-to-animate"));
+    var originalText = element.innerText;
+    moveLetters(element, originalText, elementData, 0, 0, true);
+}
+
+function moveLetters(element, originalText, elementData, elementDataIndex, currentDataIndex, directionForwards) {
+    switchDirection = false;
+    updateText(element, originalText + elementData[elementDataIndex].substring(0, currentDataIndex));
+    nextIndex = -1;
+    delta = 0;
+    if (directionForwards) {
+        if (currentDataIndex == elementData[elementDataIndex].length) {
+            nextIndex = elementData[elementDataIndex].length - 1;
+            directionForwards = !directionForwards;
+            delta = switchDelta;
+            if (elementDataIndex == elementData.length - 1) {
+                setTimeout(function () {
+                    animateShrug();
+                }, 500);
+                return;
+            }
+        } else {
+            nextIndex = currentDataIndex + 1;
+            delta = forwardDelta;
+        }
+    } else {
+        if (currentDataIndex == 0) {
+            nextIndex = 0;
+            directionForwards = !directionForwards;
+            delta = switchDelta;
+            elementDataIndex = elementDataIndex + 1;
+        } else {
+            nextIndex = currentDataIndex - 1;
+            delta = backwardDetla;
+        }
+    }
+
+    setTimeout(function () {
+        moveLetters(element, originalText, elementData, elementDataIndex, nextIndex, directionForwards);
+    }, delta);
+}
+
+function updateText(element, text) {
+    element.innerText = text;
+}
+
+function animateShrug() {
+
+    document.getElementById("leftArm").style.animation = "leftarm 5s";
+    document.getElementById("leftArm").style.WebkitAnimation = "leftarm 5s";
+    document.getElementById("rightArm").style.animation = "rightarm 5s";
+    document.getElementById("rightArm").style.WebkitAnimation = "rightarm 5s";
+}
+},{}],"js\\app.js":[function(require,module,exports) {
 'use strict';
 
 require('../scss/app.scss');
@@ -32706,6 +32775,8 @@ require('slick-carousel');
 var _chart = require('chart.js');
 
 var _chart2 = _interopRequireDefault(_chart);
+
+require('./lib/type');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33078,7 +33149,7 @@ mobileTrigger.click(function (event) {
         });
     });
 })();
-},{"../scss/app.scss":"scss\\app.scss","jquery":"node_modules\\jquery\\dist\\jquery.js","slick-carousel":"node_modules\\slick-carousel\\slick\\slick.js","chart.js":"node_modules\\chart.js\\src\\chart.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
+},{"../scss/app.scss":"scss\\app.scss","jquery":"node_modules\\jquery\\dist\\jquery.js","slick-carousel":"node_modules\\slick-carousel\\slick\\slick.js","chart.js":"node_modules\\chart.js\\src\\chart.js","./lib/type":"js\\lib\\type.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -33107,7 +33178,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55623' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61028' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
