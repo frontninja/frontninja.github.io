@@ -1390,12 +1390,14 @@ body {
   .user__auth {
     position: fixed;
     top: 50vh;
+    z-index: -10;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     right: inherit;
     left: 50%; }
   .user__auth.active {
+    z-index: 100;
     visibility: visible;
     opacity: 1;
     top: 50vh;
@@ -1405,6 +1407,7 @@ body {
     right: inherit;
     left: 50%; }
   .user__forgot {
+    z-index: -10;
     position: fixed;
     top: 50vh;
     -webkit-transform: translate(-50%, -50%);
@@ -1416,6 +1419,7 @@ body {
     visibility: visible;
     opacity: 1;
     top: 50vh;
+    z-index: 100;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
