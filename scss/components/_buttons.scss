@@ -1,0 +1,114 @@
+.button {
+    display: inline-block;
+    background-color: #FF3B00;
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    padding: 0 33px;
+    line-height: 40px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        box-shadow: $button-shadow;
+    }
+
+    &:active {
+        background-color: darken($primary, 5%);
+    }
+
+    &.facebook {
+        background: #3B5998;
+        border-radius: 8px;
+        position: relative;
+        padding: 0 30px;
+        padding-left: 50px;
+        height: 40px;
+        line-height: 40px;
+        width: 152px;
+        &:before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            background: url('../img/facebook.svg');
+            background-repeat: no-repeat;
+            left: 20px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+
+    &.google {
+        background: #F4F4F4;
+        border-radius: 8px;
+        position: relative;
+        padding: 0 30px;
+        padding-left: 50px;
+        height: 40px;
+        line-height: 40px;
+        color:$second;
+        width: 152px;
+        &:before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
+            background: url('../img/search.svg');
+            background-repeat: no-repeat;
+            left: 18px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+
+    &:disabled,
+    &[disabled] {
+        background-color: $darkGray;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    &.full-width {
+        width: 100%;
+    }
+
+    &.second {
+        background-color: $second;
+
+        &:active {
+            background-color: darken($second, 5%);
+        }
+    }
+}
+
+@media(max-width:1680px) {
+    .button{
+        height: 34px;
+        padding: 0 22px;
+        line-height: 34px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:623px){
+    .button{
+        height: 32px;
+        line-height: 32px;
+        font-size: 13px;
+    }
+}

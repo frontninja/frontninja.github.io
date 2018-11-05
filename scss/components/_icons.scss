@@ -1,0 +1,20 @@
+.icon {
+    display: inline-block;
+
+    &_download {
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        background: url('../img/download.svg');
+        margin-left: 5px;
+    }
+
+    &_next {
+        vertical-align: middle;
+        height: 13px;
+        width: 8px;
+        background: url('../img/next.svg');
+        background-repeat: no-repeat;
+        margin-left: 5px;
+    }
+}

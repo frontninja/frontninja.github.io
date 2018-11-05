@@ -1,0 +1,159 @@
+.screen-2 {
+    background: url('../img/screen2.jpg');
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    border-radius: 8px;
+    justify-content: center;
+    padding-left: 70px;
+    margin-bottom: 48px;
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        color: #FFFFFF;
+
+        /* Основной 2 */
+        text-shadow: 0px 0px 35px #C92600;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 36px;
+
+        color: #FFFFFF;
+    }
+    &__big{
+        font-size: 48px;
+        color:$primary;
+    }
+}
+
+
+
+@media(max-width:1680px) {
+    .screen-2{
+        height: 251px;
+        padding-left: 54px;
+        &__title{
+            font-size: 36px;
+        }
+        &__subtitle{
+            font-size: 30px;
+        }
+        &__big{
+            font-size: 36px;
+        }
+    }
+    
+}
+
+@media(max-width:1259px) {
+    .screen-2{
+        height: 194px;
+        padding-left: 52px;
+        &__title{
+            font-size: 32px;
+        }
+        &__subtitle{
+            font-size: 30px;
+        }
+        &__big{
+            font-size: 36px;
+        }
+    }
+    
+}
+@media(max-width:1023px){
+    .screen-2{
+        &__title{
+            font-size: 24px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        &__big{
+            font-size: 24px;
+        }
+    }
+}
+
+@media(max-width:639px){
+    .screen-2{
+        padding-left: 16px;
+        &__title{
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+        &__big{
+            font-size: 20px;
+        }
+    }
+}
+.textData {
+    position: relative;
+    display: inline-flex;
+    border-right: solid 4px rgb(255, 255, 255);
+    animation: blink forwards 0.65s infinite;
+    -webkit-animation: blink forwards 0.65s infinite;
+}
+#leftArm, #rightArm, #face {
+    display: inline-block;
+    transform: rotate(0deg);
+    color: #00A676;
+}
+#face {
+    color: #00A676;
+}
+@keyframes blink {
+    0% {
+        border-right: solid 4px rgb(255, 255, 255);
+    }
+    33% {
+        border-right: solid 4px rgb(255, 255, 255);
+    }
+    34% {
+        border-right: solid 4px rgba(255, 255, 255, 0);
+    }
+    66% {
+        border-right: solid 4px rgba(255, 255, 255, 0);
+    }
+    67% {
+        border-right: solid 4px rgb(255, 255, 255);
+    }
+    100% {
+        border-right: solid 4px rgb(255, 255, 255);
+    }
+}
+@keyframes leftarm{
+	10%{
+        transform: rotate(-20deg);
+	}
+	
+	30%{
+		transform: rotate(-20deg);
+	}
+	
+	50%{
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes rightarm{	
+	10%{
+		transform: rotate(20deg);
+	}
+	
+	30%{
+		transform: rotate(20deg);
+	}
+	
+	50%{
+		transform: rotate(0deg);
+	}
+}

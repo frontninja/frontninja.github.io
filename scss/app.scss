@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&subset=cyrillic-ext');
+
+@import 'reset';
+@import 'conf';
+@import 'global';
+@import 'slick';
+
+//Modules
+@import 'modules/header';
+@import 'modules/footer';
+
+//Components
+@import 'components/buttons';
+@import 'components/icons';
+@import 'components/input-box';
+@import 'components/menu';
+@import 'components/user';
+@import 'components/lang';
+@import 'components/tabs';
+@import 'components/s-info';
+@import 'components/s-content';
+@import 'components/s-slider';
+@import 'components/custom-input';
+@import 'components/ca-content';
+@import 'components/screen';
+@import 'components/countdown';
+@import 'components/dwn-content';

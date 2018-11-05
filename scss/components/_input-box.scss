@@ -1,0 +1,131 @@
+.input-box {
+    margin-bottom: 20px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        
+        color: #7D7D7D;
+    }
+
+    &__input {
+        margin-bottom: 5px;
+    }
+
+    &__info {
+        font-weight: 300;
+        line-height: 18px;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        // margin-top: 8px;
+        &--accent {
+            color: $primary;
+            font-weight: normal;
+        }
+    }
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    color: #000;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected{
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    &.select-arrow-active{
+        border:1px solid $primary;
+    }
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 16px;
+    width: 14px;
+    height: 9px;
+    background: url('../img/dropdown.svg') no-repeat;
+    background-size: contain;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    transform: translate(0,0) rotate(180deg);
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div {
+    height: 36px;
+    //   border: 1px solid #7D7D7D;
+    //   border-radius: 8px;
+    color: #000;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 36px;
+}
+
+.select-selected {
+    height: 36px;
+    border: 1px solid #7D7D7D;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 36px;
+    color: #000;
+    &:hover{
+        border:1px solid #2B2B2B;
+    }
+    &:focus{
+        border:1px solid $primary;
+    }
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid #7D7D7D;
+    border-radius: 8px;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width:1680px) {
+    .input-box {
+        margin-bottom: 19px;
+    
+        &__title {
+            font-size: 14px;
+        }
+        &__info{
+            display: inline-block;
+            margin-top: 5px;
+        }
+        &__input {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,232 @@
+.tabs {
+    display: flex;
+    // position: relative;
+    justify-content: space-between;
+}
+
+.tab {
+    width: 100%;
+    height: 785px;
+    margin-bottom: 48px;
+
+    &__column {
+        width: 50%;
+    }
+
+    &__header {
+        height: 108px;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        @media(min-width:1023px) {
+            &:not(.active):before{
+                content:'';
+                display: block;
+                position: absolute;
+                left:-2px;
+                height: 100%;
+                width: 2px;
+                background: #E2E2E2;
+                border-radius: 50%;
+            }
+        }
+        &--second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            line-height: 24px;
+            font-size: 24px;
+            letter-spacing: 0.05em;
+            height: 76px;
+
+            svg {
+                margin-left: 12px;
+            }
+        }
+
+        &.active {
+            background: #FFFFFF;
+            box-shadow: $box-shadow;    
+            border-radius: 8px 8px 0px 0px;
+            position: relative;
+            z-index: 1;
+            &:after {
+                content: '';
+                display: block;
+                background: #FFFFFF;
+                width: 100%;
+                height: 20px;
+                position: absolute;
+                bottom: -10px;
+                z-index: 2;
+            }
+        }
+    }
+
+    &__content {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        border-radius: 0 0 8px 8px;
+        box-shadow: $box-shadow;
+        padding: 13px 25px;
+        padding-top: 13px;
+        display: none;
+        height: 675px;
+        background: #fff;
+
+        &--ca {
+            justify-content: center;
+            background-color: #FFFFFF;
+            background-image: url('../img/caleft.png'), url('../img/caright.png');
+            background-position: left bottom, right bottom;
+            background-repeat: no-repeat, no-repeat;
+        }
+
+        &.active {
+            display: flex;
+        }
+
+        .big-number {
+            font-size: 30px;
+            letter-spacing: 0px;
+            position: relative;
+            left: -1px;
+        }
+        &--coins{
+            background-image: url('../img/coin1.png'), url('../img/coin2.png');
+            background-position: left 75%, right 75%;
+            background-repeat: no-repeat, no-repeat;
+        }
+    }
+}
+
+@media(max-width:1680px) {
+
+    .tab {
+        &__column {
+            &+& {
+                padding-left: 36px;
+            }
+        }
+
+        &__header {
+            &--second {
+                font-size: 20px;
+                white-space: nowrap;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .tab__content {
+
+        // min-height: 500px;
+        &--ca {
+            background-size: 31%, 52%;
+        }
+    }
+}
+
+
+@media(max-width:1023px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        min-height: 100px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .tab__content {
+        position: relative;
+        padding: 24px 25px;
+        height: 0;
+        margin-top: -20px;
+        transition: all .5s ease-in-out;
+        &--ca {
+            background-size: 31%, 52%;
+        }
+
+        &.active {
+            margin-bottom: 25px;
+            height: auto;
+        }
+        &--coins{
+            background-image: none;
+        }
+    }
+
+    .tab__column+.tab__column {
+        padding-left: 0px;
+    }
+
+    .tab__column {
+        padding-right: 0
+    }
+
+    .tab {
+        &__header {
+            background: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            position: relative;
+
+            &:before {
+                display: block;
+                position: absolute;
+                content: '';
+                background: url('../img/tabDrop.svg') no-repeat;
+                width: 38px;
+                height: 28px;
+                top: 50%;
+                transform: translate(0, -50%) rotate(180deg);
+                right: 20px;
+
+            }
+
+            &.active{
+                &:before {
+                    transform: translate(0, -50%) rotate(0);
+    
+                }
+            }
+
+            &--second {
+                font-size: 16px;
+                white-space: nowrap;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__column {
+            width: 100%;
+            ;
+        }
+    }
+}
+
+@media(max-width:623px){
+    .tab__header{
+        &--second{
+            font-size: 13px;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,274 @@
+#countdown {
+	width: 514px;
+	height: 112px;
+	text-align: center;
+	margin: auto;
+	padding: 24px 0;
+	position: absolute;
+	top: -9px;
+	bottom: 0;
+	left: 24px;
+	right: 0;
+}
+
+
+#countdown #tiles {
+	position: relative;
+	z-index: 1;
+}
+
+#countdown #tiles>span {
+	display: inline-block;
+	width: 84px;
+	height: 88px;
+	font-size: 40px;
+	line-height: 88px;
+	font-weight: bold;
+	text-align: center;
+	color: #2B2B2B;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(43, 43, 43, 0.1);
+	border-radius: 8px;
+	margin: 0 20px;
+	// padding: 18px 0;
+	position: relative;
+}
+
+#countdown #tiles>span:before {
+	content: ":";
+	display: block;
+	position: absolute;
+	left: -24px;
+}
+
+#countdown #tiles>span:first-child:before {
+	content: ":";
+	display: none;
+	position: absolute;
+	left: -24px;
+}
+
+// #countdown #tiles > span:after{
+// 	content:"";
+// 	width: 100%;
+// 	height: 1px;
+// 	background: #eee;
+// 	border-top: 1px solid #333;
+// 	display: block;
+// 	position: absolute;
+// 	top: 48%; left: 0;
+// }
+
+#countdown .labels {
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: 8px;
+    // justify-content: space-around;
+	padding: 0 9px;
+    display: flex;
+    bottom: -38px;
+    z-index: 1;
+}
+
+#countdown .labels li {
+	// width: 122px;
+
+	font-size: 14px;
+	text-align: center;
+	color: #2B2B2B;
+	text-align: center;
+	display: inline-block;
+	width: 84px;
+	margin: 0 20px;
+}
+
+.labels li+li{
+		margin-left: 50px;
+}
+
+@media(max-width:1680px) {
+	#countdown {
+		width: 555px;
+		height: 100px;
+	}
+	
+	
+	#countdown #tiles {
+		position: relative;
+		z-index: 1;
+	}
+	
+	#countdown #tiles>span {
+		width: 64px;
+		height: 68px;
+		font-size: 36px;
+		line-height: 64px;
+	}
+	
+	#countdown #tiles>span:before {
+		content: ":";
+		display: block;
+		position: absolute;
+		left: -24px;
+	}
+	
+	#countdown #tiles>span:first-child:before {
+		content: ":";
+		display: none;
+		position: absolute;
+		left: -24px;
+	}
+	
+	#countdown .labels {
+		width: 100%;
+		height: 25px;
+		position: absolute;
+		bottom: 8px;
+		justify-content: center;
+		padding: 0 9px;
+		display: flex;
+		bottom: -38px;
+		z-index: 1;
+	}
+	
+	#countdown .labels li {
+		font-size: 12px;
+		text-align: center;
+		color: #2B2B2B;
+		text-align: center;
+		display: inline-block;
+		width: 101px;
+		margin: 0 0px;
+	}
+	
+	.labels li+li{
+			margin-left: 50px;
+	}
+}
+
+@media(max-width:1259px) {
+	#countdown {
+		width: 390px;
+		height: 100px;
+	}
+	
+	
+	#countdown #tiles {
+		position: relative;
+		z-index: 1;
+	}
+	
+	#countdown #tiles>span {
+		width: 50px;
+		height: 53px;
+		font-size: 32px;
+		line-height: 53px;
+	}
+	
+	#countdown #tiles>span:before {
+		content: ":";
+		display: block;
+		position: absolute;
+		left: -24px;
+	}
+	
+	#countdown #tiles>span:first-child:before {
+		content: ":";
+		display: none;
+		position: absolute;
+		left: -24px;
+	}
+	
+	#countdown .labels {
+		width: 100%;
+		height: 25px;
+		position: absolute;
+		bottom: 8px;
+		justify-content: center;
+		padding: 0 9px;
+		display: flex;
+		bottom: -16px;
+		z-index: 1;
+	}
+	
+	#countdown .labels li {
+		font-size: 12px;
+		text-align: center;
+		color: #2B2B2B;
+		text-align: center;
+		display: inline-block;
+		width: 101px;
+		margin: 0 0px;
+	}
+	
+	.labels li+li{
+			margin-left: 25px;
+	}
+}
+@media(max-width:623px) {
+	#countdown {
+
+		width: 100%;
+		height: 90px;
+		padding: 38px 0;
+		position: absolute;
+		top: -9px;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	
+	
+	#countdown #tiles {
+		position: relative;
+		z-index: 1;
+	}
+	
+	#countdown #tiles>span {
+		width: 33px;
+		height: 33px;
+		font-size: 18px;
+		line-height: 33px;
+	}
+	
+	#countdown #tiles>span:before {
+		content: ":";
+		display: block;
+		position: absolute;
+		left: -24px;
+	}
+	
+	#countdown #tiles>span:first-child:before {
+		content: ":";
+		display: none;
+		position: absolute;
+		left: -10px;
+	}
+	
+	#countdown .labels {
+		width: 100%;
+		height: 25px;
+		position: absolute;
+		bottom: 8px;
+		justify-content: center;
+		padding: 0 9px;
+		display: flex;
+		bottom: -8px;
+		z-index: 1;
+	}
+	
+	#countdown .labels li {
+		font-size: 12px;
+		text-align: center;
+		color: #2B2B2B;
+		text-align: center;
+		display: inline-block;
+		width: 74px;
+		margin: 0 0px;
+	}
+	
+	.labels li+li{
+			margin-left: 20px;
+	}
+}

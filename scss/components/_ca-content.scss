@@ -1,0 +1,210 @@
+.ca-content {
+
+    padding-top: 45px;
+
+    &__main {
+        display: flex;
+    }
+
+    &__title {
+        line-height: 46px;
+        font-size: 40px;
+        letter-spacing: 0.05em;
+        margin-bottom: 43px;
+        color: #2B2B2B;
+        text-align: center;
+    }
+
+    &__left {
+        width: 364px;
+    }
+
+    &__right {
+        width: 316px;
+        padding-top: 22px;
+
+        .button {
+            margin-bottom: 36px;
+        }
+    }
+
+    &__privacy {
+        font-weight: 300;
+        line-height: 14px;
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        margin-bottom: 24px;
+        color: #7D7D7D;
+    }
+
+    &__form {
+        margin-bottom: 17px;
+    }
+
+    &__submit {
+        margin-bottom: 0;
+    }
+
+    &__master {
+        font-weight: bold;
+        line-height: normal;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        color: #2B2B2B;
+
+    }
+
+    &__link {
+        font-weight: bold;
+        line-height: normal;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        transition: color .3s ease-in-out;
+        color: #FF3B00;
+        text-decoration: none;
+        margin-left: 20px;
+
+        &:hover {
+            color: darken(#FF3B00, 10%);
+        }
+    }
+
+    &__divider {
+        font-style: normal;
+        font-weight: normal;
+        line-height: 46px;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        height: 190px;
+        color: #000000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 28px;
+        margin-top: 22px;
+
+        &:before {
+
+            top: 0;
+            content: '';
+            display: block;
+            height: 76px;
+            width: 1px;
+            background: #7D7D7D;
+            position: absolute;
+        }
+
+        &:after {
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 76px;
+            width: 1px;
+            background: #7D7D7D;
+            position: absolute;
+        }
+    }
+}
+
+
+@media(max-width:1680px) {
+
+    .ca-content {
+        padding-top: 9px;
+        &__title{
+            margin-bottom: 28px;
+            letter-spacing: -0.3px;
+        }
+        &__left{
+            width: 315px;
+        }
+        &__master{
+            font-size: 14px;
+        }
+        &__link{
+            font-size: 14px;
+        }
+        &__privacy{
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        &__divider{
+            margin: 0 53px;
+        }
+        &__submit{
+            margin-bottom: -7px;
+        }
+    }
+}
+
+@media(max-width:1259px) {
+
+    .ca-content {
+        padding-top: 9px;
+        &__title{
+            font-size: 24px;
+            margin-bottom: 28px;
+            letter-spacing: -0.3px;
+        }
+        &__left{
+            width: 315px;
+        }
+        &__master{
+            font-size: 14px;
+        }
+        &__link{
+            font-size: 14px;
+        }
+        &__privacy{
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        &__divider{
+            margin: 0 53px;
+        }
+        &__submit{
+            margin-bottom: -7px;
+        }
+    }
+}
+
+@media(max-width:1023px){
+    .ca-content{
+        &__main{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__divider{
+            margin: 0 auto;
+            height: 36px;
+            margin-top: 15px;
+            position: relative;
+            width: 28px;
+            &::before{
+                top: inherit;
+                left: 35px;
+                content: '';
+                display: block;
+                height: 1px;
+                width: 76px;
+                background: #7D7D7D;
+                position: absolute;
+            }
+            &::after{
+                bottom: inherit;
+                right: 35px;
+                content: '';
+                display: block;
+                height: 1px;
+                width: 76px;
+                background: #7D7D7D;
+                position: absolute;
+            }
+        }
+    }
+  }
