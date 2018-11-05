@@ -103,73 +103,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+})({"tUkn":[function(require,module,exports) {
 
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\bundle-url.js"}],"scss\\app.scss":[function(require,module,exports) {
-
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\img\\screen.jpg":[["screen.60860209.jpg","img\\screen.jpg"],"img\\screen.jpg"],"./..\\img\\dropblack.svg":[["dropblack.0a4a660e.svg","img\\dropblack.svg"],"img\\dropblack.svg"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.0ddd9cd3.png","img\\lineage-2-art.png"],"img\\lineage-2-art.png"],"./..\\img\\facebook.svg":[["facebook.d3e0977d.svg","img\\facebook.svg"],"img\\facebook.svg"],"./..\\img\\search.svg":[["search.a63d30ed.svg","img\\search.svg"],"img\\search.svg"],"./..\\img\\download.svg":[["download.106971ff.svg","img\\download.svg"],"img\\download.svg"],"./..\\img\\next.svg":[["next.b4f43693.svg","img\\next.svg"],"img\\next.svg"],"./..\\img\\dropdown.svg":[["dropdown.b55a384d.svg","img\\dropdown.svg"],"img\\dropdown.svg"],"./..\\img\\dropdownHover.svg":[["dropdownHover.0de0ffff.svg","img\\dropdownHover.svg"],"img\\dropdownHover.svg"],"./..\\img\\user.png":[["user.11c6f16f.png","img\\user.png"],"img\\user.png"],"./..\\img\\user2.png":[["user2.2ccb0721.png","img\\user2.png"],"img\\user2.png"],"./..\\img\\caleft.png":[["caleft.78a47b0f.png","img\\caleft.png"],"img\\caleft.png"],"./..\\img\\caright.png":[["caright.1568c72c.png","img\\caright.png"],"img\\caright.png"],"./..\\img\\coin1.png":[["coin1.3f7c717b.png","img\\coin1.png"],"img\\coin1.png"],"./..\\img\\coin2.png":[["coin2.c5966ae7.png","img\\coin2.png"],"img\\coin2.png"],"./..\\img\\tabDrop.svg":[["tabDrop.57b3b41d.svg","img\\tabDrop.svg"],"img\\tabDrop.svg"],"./..\\img\\timerbg.png":[["timerbg.d907396b.png","img\\timerbg.png"],"img\\timerbg.png"],"./..\\img\\recycle.svg":[["recycle.e3242b1a.svg","img\\recycle.svg"],"img\\recycle.svg"],"./..\\img\\screen2.jpg":[["screen2.c4c333df.jpg","img\\screen2.jpg"],"img\\screen2.jpg"],"./..\\img\\dual.png":[["dual.2b2d0f80.png","img\\dual.png"],"img\\dual.png"],"_css_loader":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\css-loader.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js":[function(require,module,exports) {
+},{"./..\\img\\screen.jpg":[["screen.0edfdd06.jpg","FzUJ"],"FzUJ"],"./..\\img\\dropblack.svg":[["dropblack.b655297e.svg","XwPW"],"XwPW"],"./..\\img\\lineage-2-art.png":[["lineage-2-art.f5754536.png","MDL8"],"MDL8"],"./..\\img\\facebook.svg":[["facebook.039ccef7.svg","z20O"],"z20O"],"./..\\img\\search.svg":[["search.3dcfad76.svg","BcMk"],"BcMk"],"./..\\img\\download.svg":[["download.9509488a.svg","ZxUf"],"ZxUf"],"./..\\img\\next.svg":[["next.83152f82.svg","WQA0"],"WQA0"],"./..\\img\\dropdown.svg":[["dropdown.788e45a9.svg","c6rH"],"c6rH"],"./..\\img\\dropdownHover.svg":[["dropdownHover.f5dd6369.svg","JWM+"],"JWM+"],"./..\\img\\user.png":[["user.72efe625.png","yXtI"],"yXtI"],"./..\\img\\user2.png":[["user2.334d9661.png","VgcU"],"VgcU"],"./..\\img\\caleft.png":[["caleft.911ff1fc.png","yiRX"],"yiRX"],"./..\\img\\caright.png":[["caright.7ffb270b.png","GRnF"],"GRnF"],"./..\\img\\coin1.png":[["coin1.cd3b3232.png","wxUJ"],"wxUJ"],"./..\\img\\coin2.png":[["coin2.355e3b19.png","PprF"],"PprF"],"./..\\img\\tabDrop.svg":[["tabDrop.7181b177.svg","SOBa"],"SOBa"],"./..\\img\\timerbg.png":[["timerbg.93a93eeb.png","fFNS"],"fFNS"],"./..\\img\\recycle.svg":[["recycle.56162e7a.svg","P7Bf"],"P7Bf"],"./..\\img\\screen2.jpg":[["screen2.c65838aa.jpg","tVZN"],"tVZN"],"./..\\img\\dual.png":[["dual.f2883a4c.png","RkWp"],"RkWp"]}],"fpNv":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -356,7 +292,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],"node_modules\\jquery\\dist\\jquery.js":[function(require,module,exports) {
+},{}],"QRCz":[function(require,module,exports) {
 var global = arguments[3];
 var process = require("process");
 var define;
@@ -10725,7 +10661,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\node_modules\\process\\browser.js"}],"node_modules\\slick-carousel\\slick\\slick.js":[function(require,module,exports) {
+},{"process":"fpNv"}],"mcYC":[function(require,module,exports) {
 var define;
 /*
      _ _      _       _
@@ -13739,7 +13675,7 @@ var define;
 
 }));
 
-},{"jquery":"node_modules\\jquery\\dist\\jquery.js"}],"node_modules\\chart.js\\src\\helpers\\helpers.core.js":[function(require,module,exports) {
+},{"jquery":"QRCz"}],"XFVV":[function(require,module,exports) {
 'use strict';
 
 /**
@@ -14080,7 +14016,7 @@ helpers.getValueOrDefault = helpers.valueOrDefault;
  */
 helpers.getValueAtIndexOrDefault = helpers.valueAtIndexOrDefault;
 
-},{}],"node_modules\\chart.js\\src\\helpers\\helpers.easing.js":[function(require,module,exports) {
+},{}],"Ko1j":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('./helpers.core');
@@ -14332,7 +14268,7 @@ module.exports = {
  */
 helpers.easingEffects = effects;
 
-},{"./helpers.core":"node_modules\\chart.js\\src\\helpers\\helpers.core.js"}],"node_modules\\chart.js\\src\\helpers\\helpers.canvas.js":[function(require,module,exports) {
+},{"./helpers.core":"XFVV"}],"YY/s":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('./helpers.core');
@@ -14543,7 +14479,7 @@ helpers.drawRoundedRectangle = function(ctx) {
 	exports.roundedRect.apply(exports, arguments);
 };
 
-},{"./helpers.core":"node_modules\\chart.js\\src\\helpers\\helpers.core.js"}],"node_modules\\chart.js\\src\\helpers\\helpers.options.js":[function(require,module,exports) {
+},{"./helpers.core":"XFVV"}],"1WHi":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('./helpers.core');
@@ -14641,7 +14577,7 @@ module.exports = {
 	}
 };
 
-},{"./helpers.core":"node_modules\\chart.js\\src\\helpers\\helpers.core.js"}],"node_modules\\chart.js\\src\\helpers\\index.js":[function(require,module,exports) {
+},{"./helpers.core":"XFVV"}],"3H2f":[function(require,module,exports) {
 'use strict';
 
 module.exports = require('./helpers.core');
@@ -14649,7 +14585,7 @@ module.exports.easing = require('./helpers.easing');
 module.exports.canvas = require('./helpers.canvas');
 module.exports.options = require('./helpers.options');
 
-},{"./helpers.core":"node_modules\\chart.js\\src\\helpers\\helpers.core.js","./helpers.easing":"node_modules\\chart.js\\src\\helpers\\helpers.easing.js","./helpers.canvas":"node_modules\\chart.js\\src\\helpers\\helpers.canvas.js","./helpers.options":"node_modules\\chart.js\\src\\helpers\\helpers.options.js"}],"node_modules\\chart.js\\src\\core\\core.defaults.js":[function(require,module,exports) {
+},{"./helpers.core":"XFVV","./helpers.easing":"Ko1j","./helpers.canvas":"YY/s","./helpers.options":"1WHi"}],"cvrI":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -14663,7 +14599,7 @@ module.exports = {
 	}
 };
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\core\\core.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f"}],"zddY":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('./core.defaults');
@@ -14714,7 +14650,7 @@ module.exports = function() {
 	return Chart;
 };
 
-},{"./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js"}],"node_modules\\chartjs-color\\node_modules\\color-convert\\conversions.js":[function(require,module,exports) {
+},{"./core.defaults":"cvrI"}],"599c":[function(require,module,exports) {
 /* MIT license */
 
 module.exports = {
@@ -15414,7 +15350,7 @@ for (var key in cssKeywords) {
   reverseKeywords[JSON.stringify(cssKeywords[key])] = key;
 }
 
-},{}],"node_modules\\chartjs-color\\node_modules\\color-convert\\index.js":[function(require,module,exports) {
+},{}],"k4Kl":[function(require,module,exports) {
 var conversions = require("./conversions");
 
 var convert = function() {
@@ -15507,7 +15443,7 @@ Converter.prototype.getValues = function(space) {
 });
 
 module.exports = convert;
-},{"./conversions":"node_modules\\chartjs-color\\node_modules\\color-convert\\conversions.js"}],"node_modules\\color-name\\index.js":[function(require,module,exports) {
+},{"./conversions":"599c"}],"+j3q":[function(require,module,exports) {
 'use strict'
 
 module.exports = {
@@ -15661,7 +15597,7 @@ module.exports = {
 	"yellowgreen": [154, 205, 50]
 };
 
-},{}],"node_modules\\chartjs-color-string\\color-string.js":[function(require,module,exports) {
+},{}],"66Ps":[function(require,module,exports) {
 /* MIT license */
 var colorNames = require('color-name');
 
@@ -15884,7 +15820,7 @@ for (var name in colorNames) {
    reverseNames[colorNames[name]] = name;
 }
 
-},{"color-name":"node_modules\\color-name\\index.js"}],"node_modules\\chartjs-color\\index.js":[function(require,module,exports) {
+},{"color-name":"+j3q"}],"/zbU":[function(require,module,exports) {
 /* MIT license */
 var convert = require('color-convert');
 var string = require('chartjs-color-string');
@@ -16371,7 +16307,7 @@ if (typeof window !== 'undefined') {
 
 module.exports = Color;
 
-},{"color-convert":"node_modules\\chartjs-color\\node_modules\\color-convert\\index.js","chartjs-color-string":"node_modules\\chartjs-color-string\\color-string.js"}],"node_modules\\chart.js\\src\\core\\core.layouts.js":[function(require,module,exports) {
+},{"color-convert":"k4Kl","chartjs-color-string":"66Ps"}],"EOn6":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -16792,7 +16728,7 @@ module.exports = {
 	}
 };
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\core\\core.scaleService.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f"}],"VjHj":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('./core.defaults');
@@ -16837,7 +16773,7 @@ module.exports = {
 	}
 };
 
-},{"./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","./core.layouts":"node_modules\\chart.js\\src\\core\\core.layouts.js"}],"node_modules\\chart.js\\src\\core\\core.helpers.js":[function(require,module,exports) {
+},{"./core.defaults":"cvrI","../helpers/index":"3H2f","./core.layouts":"EOn6"}],"+qFe":[function(require,module,exports) {
 /* global window: false */
 /* global document: false */
 'use strict';
@@ -17473,7 +17409,7 @@ module.exports = function() {
 	};
 };
 
-},{"chartjs-color":"node_modules\\chartjs-color\\index.js","./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js"}],"node_modules\\chart.js\\src\\core\\core.element.js":[function(require,module,exports) {
+},{"chartjs-color":"/zbU","./core.defaults":"cvrI","../helpers/index":"3H2f","../core/core.scaleService":"VjHj"}],"xzZ0":[function(require,module,exports) {
 'use strict';
 
 var color = require('chartjs-color');
@@ -17590,7 +17526,7 @@ Element.extend = helpers.inherits;
 
 module.exports = Element;
 
-},{"chartjs-color":"node_modules\\chartjs-color\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\core\\core.animation.js":[function(require,module,exports) {
+},{"chartjs-color":"/zbU","../helpers/index":"3H2f"}],"JvTf":[function(require,module,exports) {
 'use strict';
 
 var Element = require('./core.element');
@@ -17635,7 +17571,7 @@ Object.defineProperty(exports.prototype, 'chartInstance', {
 	}
 });
 
-},{"./core.element":"node_modules\\chart.js\\src\\core\\core.element.js"}],"node_modules\\chart.js\\src\\core\\core.animations.js":[function(require,module,exports) {
+},{"./core.element":"xzZ0"}],"L/Fz":[function(require,module,exports) {
 /* global window: false */
 'use strict';
 
@@ -17766,7 +17702,7 @@ module.exports = {
 	}
 };
 
-},{"./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\elements\\element.arc.js":[function(require,module,exports) {
+},{"./core.defaults":"cvrI","../helpers/index":"3H2f"}],"F4bh":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -17875,7 +17811,7 @@ module.exports = Element.extend({
 	}
 });
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\elements\\element.line.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../core/core.element":"xzZ0","../helpers/index":"3H2f"}],"npRq":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -17968,7 +17904,7 @@ module.exports = Element.extend({
 	}
 });
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\elements\\element.point.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../core/core.element":"xzZ0","../helpers/index":"3H2f"}],"g7/f":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -18059,7 +17995,7 @@ module.exports = Element.extend({
 	}
 });
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\elements\\element.rectangle.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../core/core.element":"xzZ0","../helpers/index":"3H2f"}],"m2ha":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -18278,7 +18214,7 @@ module.exports = Element.extend({
 	}
 });
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js"}],"node_modules\\chart.js\\src\\elements\\index.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../core/core.element":"xzZ0"}],"82Zp":[function(require,module,exports) {
 'use strict';
 
 module.exports = {};
@@ -18287,7 +18223,7 @@ module.exports.Line = require('./element.line');
 module.exports.Point = require('./element.point');
 module.exports.Rectangle = require('./element.rectangle');
 
-},{"./element.arc":"node_modules\\chart.js\\src\\elements\\element.arc.js","./element.line":"node_modules\\chart.js\\src\\elements\\element.line.js","./element.point":"node_modules\\chart.js\\src\\elements\\element.point.js","./element.rectangle":"node_modules\\chart.js\\src\\elements\\element.rectangle.js"}],"node_modules\\chart.js\\src\\core\\core.interaction.js":[function(require,module,exports) {
+},{"./element.arc":"F4bh","./element.line":"npRq","./element.point":"g7/f","./element.rectangle":"m2ha"}],"uQtL":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -18619,7 +18555,7 @@ module.exports = {
 	}
 };
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\platforms\\platform.basic.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f"}],"9I/2":[function(require,module,exports) {
 /**
  * Platform fallback implementation (minimal).
  * @see https://github.com/chartjs/Chart.js/pull/4591#issuecomment-319575939
@@ -18636,7 +18572,7 @@ module.exports = {
 	}
 };
 
-},{}],"node_modules\\chart.js\\src\\platforms\\platform.dom.js":[function(require,module,exports) {
+},{}],"V2id":[function(require,module,exports) {
 /**
  * Chart.Platform implementation for targeting a web browser
  */
@@ -19095,7 +19031,7 @@ helpers.addEvent = addEventListener;
  */
 helpers.removeEvent = removeEventListener;
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\platforms\\platform.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f"}],"z5zc":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -19171,7 +19107,7 @@ module.exports = helpers.extend({
  * @prop {Number} y - The mouse y position, relative to the canvas (null for incompatible events)
  */
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","./platform.basic":"node_modules\\chart.js\\src\\platforms\\platform.basic.js","./platform.dom":"node_modules\\chart.js\\src\\platforms\\platform.dom.js"}],"node_modules\\chart.js\\src\\core\\core.plugins.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f","./platform.basic":"9I/2","./platform.dom":"V2id"}],"pkCh":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('./core.defaults');
@@ -19555,7 +19491,7 @@ module.exports = {
  * @param {Object} options - The plugin options.
  */
 
-},{"./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\core\\core.ticks.js":[function(require,module,exports) {
+},{"./core.defaults":"cvrI","../helpers/index":"3H2f"}],"nKiR":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -19633,7 +19569,7 @@ module.exports = {
 	}
 };
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\core\\core.scale.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f"}],"NAsR":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('./core.defaults');
@@ -20569,7 +20505,7 @@ module.exports = Element.extend({
 	}
 });
 
-},{"./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","./core.element":"node_modules\\chart.js\\src\\core\\core.element.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","./core.ticks":"node_modules\\chart.js\\src\\core\\core.ticks.js"}],"node_modules\\chart.js\\src\\core\\core.tooltip.js":[function(require,module,exports) {
+},{"./core.defaults":"cvrI","./core.element":"xzZ0","../helpers/index":"3H2f","./core.ticks":"nKiR"}],"jVdK":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('./core.defaults');
@@ -21544,7 +21480,7 @@ var exports = module.exports = Element.extend({
 exports.positioners = positioners;
 
 
-},{"./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","./core.element":"node_modules\\chart.js\\src\\core\\core.element.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\core\\core.controller.js":[function(require,module,exports) {
+},{"./core.defaults":"cvrI","./core.element":"xzZ0","../helpers/index":"3H2f"}],"FPEp":[function(require,module,exports) {
 'use strict';
 
 var Animation = require('./core.animation');
@@ -22506,7 +22442,7 @@ module.exports = function(Chart) {
 	Chart.Controller = Chart;
 };
 
-},{"./core.animation":"node_modules\\chart.js\\src\\core\\core.animation.js","./core.animations":"node_modules\\chart.js\\src\\core\\core.animations.js","./core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","./core.interaction":"node_modules\\chart.js\\src\\core\\core.interaction.js","./core.layouts":"node_modules\\chart.js\\src\\core\\core.layouts.js","../platforms/platform":"node_modules\\chart.js\\src\\platforms\\platform.js","./core.plugins":"node_modules\\chart.js\\src\\core\\core.plugins.js","../core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js","./core.tooltip":"node_modules\\chart.js\\src\\core\\core.tooltip.js"}],"node_modules\\chart.js\\src\\core\\core.datasetController.js":[function(require,module,exports) {
+},{"./core.animation":"JvTf","./core.animations":"L/Fz","./core.defaults":"cvrI","../helpers/index":"3H2f","./core.interaction":"uQtL","./core.layouts":"EOn6","../platforms/platform":"z5zc","./core.plugins":"pkCh","../core/core.scaleService":"VjHj","./core.tooltip":"jVdK"}],"TfXW":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -22837,7 +22773,7 @@ module.exports = function(Chart) {
 	Chart.DatasetController.extend = helpers.inherits;
 };
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\scales\\scale.linearbase.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f"}],"LHi0":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -23036,7 +22972,7 @@ module.exports = function(Chart) {
 	});
 };
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.scale":"node_modules\\chart.js\\src\\core\\core.scale.js"}],"node_modules\\chart.js\\src\\scales\\scale.category.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f","../core/core.scale":"NAsR"}],"K9sq":[function(require,module,exports) {
 'use strict';
 
 var Scale = require('../core/core.scale');
@@ -23173,7 +23109,7 @@ module.exports = function() {
 	scaleService.registerScaleType('category', DatasetScale, defaultConfig);
 };
 
-},{"../core/core.scale":"node_modules\\chart.js\\src\\core\\core.scale.js","../core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js"}],"node_modules\\chart.js\\src\\scales\\scale.linear.js":[function(require,module,exports) {
+},{"../core/core.scale":"NAsR","../core/core.scaleService":"VjHj"}],"1+5h":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -23367,7 +23303,7 @@ module.exports = function(Chart) {
 	scaleService.registerScaleType('linear', LinearScale, defaultConfig);
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js","../core/core.ticks":"node_modules\\chart.js\\src\\core\\core.ticks.js"}],"node_modules\\chart.js\\src\\scales\\scale.logarithmic.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../helpers/index":"3H2f","../core/core.scaleService":"VjHj","../core/core.ticks":"nKiR"}],"ynyq":[function(require,module,exports) {
 'use strict';
 
 var helpers = require('../helpers/index');
@@ -23718,7 +23654,7 @@ module.exports = function(Chart) {
 	scaleService.registerScaleType('logarithmic', LogarithmicScale, defaultConfig);
 };
 
-},{"../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.scale":"node_modules\\chart.js\\src\\core\\core.scale.js","../core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js","../core/core.ticks":"node_modules\\chart.js\\src\\core\\core.ticks.js"}],"node_modules\\chart.js\\src\\scales\\scale.radialLinear.js":[function(require,module,exports) {
+},{"../helpers/index":"3H2f","../core/core.scale":"NAsR","../core/core.scaleService":"VjHj","../core/core.ticks":"nKiR"}],"ghIU":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -24250,7 +24186,7 @@ module.exports = function(Chart) {
 	scaleService.registerScaleType('radialLinear', LinearRadialScale, defaultConfig);
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js","../core/core.ticks":"node_modules\\chart.js\\src\\core\\core.ticks.js"}],"node_modules\\moment\\moment.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../helpers/index":"3H2f","../core/core.scaleService":"VjHj","../core/core.ticks":"nKiR"}],"Vip+":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 //! moment.js
@@ -28760,7 +28696,7 @@ var global = arguments[3];
 
 })));
 
-},{}],"node_modules\\chart.js\\src\\scales\\scale.time.js":[function(require,module,exports) {
+},{}],"cl8V":[function(require,module,exports) {
 /* global window: false */
 'use strict';
 
@@ -29547,7 +29483,7 @@ module.exports = function() {
 	scaleService.registerScaleType('time', TimeScale, defaultConfig);
 };
 
-},{"moment":"node_modules\\moment\\moment.js","../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.scale":"node_modules\\chart.js\\src\\core\\core.scale.js","../core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js"}],"node_modules\\chart.js\\src\\controllers\\controller.bar.js":[function(require,module,exports) {
+},{"moment":"Vip+","../core/core.defaults":"cvrI","../helpers/index":"3H2f","../core/core.scale":"NAsR","../core/core.scaleService":"VjHj"}],"4OeV":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -30030,7 +29966,7 @@ module.exports = function(Chart) {
 	});
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../elements/index":"node_modules\\chart.js\\src\\elements\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\controllers\\controller.bubble.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../elements/index":"82Zp","../helpers/index":"3H2f"}],"9150":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -30205,7 +30141,7 @@ module.exports = function(Chart) {
 	});
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../elements/index":"node_modules\\chart.js\\src\\elements\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\controllers\\controller.doughnut.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../elements/index":"82Zp","../helpers/index":"3H2f"}],"kI+G":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -30508,7 +30444,7 @@ module.exports = function(Chart) {
 	});
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../elements/index":"node_modules\\chart.js\\src\\elements\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\controllers\\controller.line.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../elements/index":"82Zp","../helpers/index":"3H2f"}],"s9dK":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -30854,7 +30790,7 @@ module.exports = function(Chart) {
 	});
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../elements/index":"node_modules\\chart.js\\src\\elements\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\controllers\\controller.polarArea.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../elements/index":"82Zp","../helpers/index":"3H2f"}],"0N5S":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -31111,7 +31047,7 @@ module.exports = function(Chart) {
 	});
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../elements/index":"node_modules\\chart.js\\src\\elements\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\controllers\\controller.radar.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../elements/index":"82Zp","../helpers/index":"3H2f"}],"6fyn":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -31276,7 +31212,7 @@ module.exports = function(Chart) {
 	});
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../elements/index":"node_modules\\chart.js\\src\\elements\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\controllers\\controller.scatter.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../elements/index":"82Zp","../helpers/index":"3H2f"}],"c6hp":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -31320,7 +31256,7 @@ module.exports = function(Chart) {
 
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js"}],"node_modules\\chart.js\\src\\charts\\Chart.Bar.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI"}],"YQI0":[function(require,module,exports) {
 'use strict';
 
 module.exports = function(Chart) {
@@ -31333,7 +31269,7 @@ module.exports = function(Chart) {
 
 };
 
-},{}],"node_modules\\chart.js\\src\\charts\\Chart.Bubble.js":[function(require,module,exports) {
+},{}],"b6VJ":[function(require,module,exports) {
 'use strict';
 
 module.exports = function(Chart) {
@@ -31345,7 +31281,7 @@ module.exports = function(Chart) {
 
 };
 
-},{}],"node_modules\\chart.js\\src\\charts\\Chart.Doughnut.js":[function(require,module,exports) {
+},{}],"5505":[function(require,module,exports) {
 'use strict';
 
 module.exports = function(Chart) {
@@ -31358,7 +31294,7 @@ module.exports = function(Chart) {
 
 };
 
-},{}],"node_modules\\chart.js\\src\\charts\\Chart.Line.js":[function(require,module,exports) {
+},{}],"8nbM":[function(require,module,exports) {
 'use strict';
 
 module.exports = function(Chart) {
@@ -31371,7 +31307,7 @@ module.exports = function(Chart) {
 
 };
 
-},{}],"node_modules\\chart.js\\src\\charts\\Chart.PolarArea.js":[function(require,module,exports) {
+},{}],"CX8a":[function(require,module,exports) {
 'use strict';
 
 module.exports = function(Chart) {
@@ -31384,7 +31320,7 @@ module.exports = function(Chart) {
 
 };
 
-},{}],"node_modules\\chart.js\\src\\charts\\Chart.Radar.js":[function(require,module,exports) {
+},{}],"1hlF":[function(require,module,exports) {
 'use strict';
 
 module.exports = function(Chart) {
@@ -31397,7 +31333,7 @@ module.exports = function(Chart) {
 
 };
 
-},{}],"node_modules\\chart.js\\src\\charts\\Chart.Scatter.js":[function(require,module,exports) {
+},{}],"0UZN":[function(require,module,exports) {
 'use strict';
 
 module.exports = function(Chart) {
@@ -31407,7 +31343,7 @@ module.exports = function(Chart) {
 	};
 };
 
-},{}],"node_modules\\chart.js\\src\\plugins\\plugin.filler.js":[function(require,module,exports) {
+},{}],"WT3M":[function(require,module,exports) {
 /**
  * Plugin based on discussion from the following Chart.js issues:
  * @see https://github.com/chartjs/Chart.js/issues/2380#issuecomment-279961569
@@ -31727,7 +31663,7 @@ module.exports = {
 	}
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../elements/index":"node_modules\\chart.js\\src\\elements\\index.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js"}],"node_modules\\chart.js\\src\\plugins\\plugin.legend.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../elements/index":"82Zp","../helpers/index":"3H2f"}],"tWLf":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -32305,7 +32241,7 @@ module.exports = {
 	}
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.layouts":"node_modules\\chart.js\\src\\core\\core.layouts.js"}],"node_modules\\chart.js\\src\\plugins\\plugin.title.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../core/core.element":"xzZ0","../helpers/index":"3H2f","../core/core.layouts":"EOn6"}],"R+07":[function(require,module,exports) {
 'use strict';
 
 var defaults = require('../core/core.defaults');
@@ -32559,7 +32495,7 @@ module.exports = {
 	}
 };
 
-},{"../core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","../core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","../helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","../core/core.layouts":"node_modules\\chart.js\\src\\core\\core.layouts.js"}],"node_modules\\chart.js\\src\\plugins\\index.js":[function(require,module,exports) {
+},{"../core/core.defaults":"cvrI","../core/core.element":"xzZ0","../helpers/index":"3H2f","../core/core.layouts":"EOn6"}],"2Kzw":[function(require,module,exports) {
 'use strict';
 
 module.exports = {};
@@ -32567,7 +32503,7 @@ module.exports.filler = require('./plugin.filler');
 module.exports.legend = require('./plugin.legend');
 module.exports.title = require('./plugin.title');
 
-},{"./plugin.filler":"node_modules\\chart.js\\src\\plugins\\plugin.filler.js","./plugin.legend":"node_modules\\chart.js\\src\\plugins\\plugin.legend.js","./plugin.title":"node_modules\\chart.js\\src\\plugins\\plugin.title.js"}],"node_modules\\chart.js\\src\\chart.js":[function(require,module,exports) {
+},{"./plugin.filler":"WT3M","./plugin.legend":"tWLf","./plugin.title":"R+07"}],"ECCz":[function(require,module,exports) {
 /**
  * @namespace Chart
  */
@@ -32692,7 +32628,7 @@ Chart.canvasHelpers = Chart.helpers.canvas;
  */
 Chart.layoutService = Chart.layouts;
 
-},{"./core/core":"node_modules\\chart.js\\src\\core\\core.js","./helpers/index":"node_modules\\chart.js\\src\\helpers\\index.js","./core/core.helpers":"node_modules\\chart.js\\src\\core\\core.helpers.js","./core/core.animation":"node_modules\\chart.js\\src\\core\\core.animation.js","./core/core.animations":"node_modules\\chart.js\\src\\core\\core.animations.js","./core/core.defaults":"node_modules\\chart.js\\src\\core\\core.defaults.js","./core/core.element":"node_modules\\chart.js\\src\\core\\core.element.js","./elements/index":"node_modules\\chart.js\\src\\elements\\index.js","./core/core.interaction":"node_modules\\chart.js\\src\\core\\core.interaction.js","./core/core.layouts":"node_modules\\chart.js\\src\\core\\core.layouts.js","./platforms/platform":"node_modules\\chart.js\\src\\platforms\\platform.js","./core/core.plugins":"node_modules\\chart.js\\src\\core\\core.plugins.js","./core/core.scale":"node_modules\\chart.js\\src\\core\\core.scale.js","./core/core.scaleService":"node_modules\\chart.js\\src\\core\\core.scaleService.js","./core/core.ticks":"node_modules\\chart.js\\src\\core\\core.ticks.js","./core/core.tooltip":"node_modules\\chart.js\\src\\core\\core.tooltip.js","./core/core.controller":"node_modules\\chart.js\\src\\core\\core.controller.js","./core/core.datasetController":"node_modules\\chart.js\\src\\core\\core.datasetController.js","./scales/scale.linearbase":"node_modules\\chart.js\\src\\scales\\scale.linearbase.js","./scales/scale.category":"node_modules\\chart.js\\src\\scales\\scale.category.js","./scales/scale.linear":"node_modules\\chart.js\\src\\scales\\scale.linear.js","./scales/scale.logarithmic":"node_modules\\chart.js\\src\\scales\\scale.logarithmic.js","./scales/scale.radialLinear":"node_modules\\chart.js\\src\\scales\\scale.radialLinear.js","./scales/scale.time":"node_modules\\chart.js\\src\\scales\\scale.time.js","./controllers/controller.bar":"node_modules\\chart.js\\src\\controllers\\controller.bar.js","./controllers/controller.bubble":"node_modules\\chart.js\\src\\controllers\\controller.bubble.js","./controllers/controller.doughnut":"node_modules\\chart.js\\src\\controllers\\controller.doughnut.js","./controllers/controller.line":"node_modules\\chart.js\\src\\controllers\\controller.line.js","./controllers/controller.polarArea":"node_modules\\chart.js\\src\\controllers\\controller.polarArea.js","./controllers/controller.radar":"node_modules\\chart.js\\src\\controllers\\controller.radar.js","./controllers/controller.scatter":"node_modules\\chart.js\\src\\controllers\\controller.scatter.js","./charts/Chart.Bar":"node_modules\\chart.js\\src\\charts\\Chart.Bar.js","./charts/Chart.Bubble":"node_modules\\chart.js\\src\\charts\\Chart.Bubble.js","./charts/Chart.Doughnut":"node_modules\\chart.js\\src\\charts\\Chart.Doughnut.js","./charts/Chart.Line":"node_modules\\chart.js\\src\\charts\\Chart.Line.js","./charts/Chart.PolarArea":"node_modules\\chart.js\\src\\charts\\Chart.PolarArea.js","./charts/Chart.Radar":"node_modules\\chart.js\\src\\charts\\Chart.Radar.js","./charts/Chart.Scatter":"node_modules\\chart.js\\src\\charts\\Chart.Scatter.js","./plugins":"node_modules\\chart.js\\src\\plugins\\index.js"}],"js\\lib\\type.js":[function(require,module,exports) {
+},{"./core/core":"zddY","./helpers/index":"3H2f","./core/core.helpers":"+qFe","./core/core.animation":"JvTf","./core/core.animations":"L/Fz","./core/core.defaults":"cvrI","./core/core.element":"xzZ0","./elements/index":"82Zp","./core/core.interaction":"uQtL","./core/core.layouts":"EOn6","./platforms/platform":"z5zc","./core/core.plugins":"pkCh","./core/core.scale":"NAsR","./core/core.scaleService":"VjHj","./core/core.ticks":"nKiR","./core/core.tooltip":"jVdK","./core/core.controller":"FPEp","./core/core.datasetController":"TfXW","./scales/scale.linearbase":"LHi0","./scales/scale.category":"K9sq","./scales/scale.linear":"1+5h","./scales/scale.logarithmic":"ynyq","./scales/scale.radialLinear":"ghIU","./scales/scale.time":"cl8V","./controllers/controller.bar":"4OeV","./controllers/controller.bubble":"9150","./controllers/controller.doughnut":"kI+G","./controllers/controller.line":"s9dK","./controllers/controller.polarArea":"0N5S","./controllers/controller.radar":"6fyn","./controllers/controller.scatter":"c6hp","./charts/Chart.Bar":"YQI0","./charts/Chart.Bubble":"b6VJ","./charts/Chart.Doughnut":"5505","./charts/Chart.Line":"8nbM","./charts/Chart.PolarArea":"CX8a","./charts/Chart.Radar":"1hlF","./charts/Chart.Scatter":"0UZN","./plugins":"2Kzw"}],"3+j1":[function(require,module,exports) {
 if (window.addEventListener) // W3C standard
     {
         window.addEventListener('load', animate, false); // NB **not** 'onload'
@@ -32761,7 +32697,7 @@ function animateShrug() {
     document.getElementById("rightArm").style.animation = "rightarm 5s";
     document.getElementById("rightArm").style.WebkitAnimation = "rightarm 5s";
 }
-},{}],"js\\app.js":[function(require,module,exports) {
+},{}],"29uZ":[function(require,module,exports) {
 'use strict';
 
 require('../scss/app.scss');
@@ -32812,7 +32748,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 
 var overlay = (0, _jquery2.default)('.overlay');
-var ctx = document.getElementById("myChart");
+var ctx = document.querySelector(".chart");
 var myChart = new _chart2.default(ctx, {
     type: 'line',
     data: {
@@ -32965,6 +32901,21 @@ countTimer();
         dots: true,
         fade: true
     });
+    // $('.slider-go').each(function(){
+    //     $(this).click(function(event){
+    //         event.preventDefault();
+    //         var indexS = 1;
+    //         // var slide = $(this).closest('.s-slider__wrapper');
+    //         var slide = $('.s-slider__wrapper');
+    //         slide.slick('slickGoTo', 2, true);
+    //     })
+    // })
+    (0, _jquery2.default)('.slider-go').click(function (event) {
+        event.preventDefault();
+        // var slide = $(this).closest('.s-slider__wrapper');
+        var slide = (0, _jquery2.default)('.s-slider__wrapper');
+        slide.slick('slickGoTo', 1, true);
+    });
 });
 
 var x, i, j, selElmnt, a, b, c;
@@ -33075,15 +33026,38 @@ elem.addEventListener("click", function () {
 (0, _jquery2.default)('.user__trigger').click(function (event) {
     event.preventDefault();
     var userLogin = (0, _jquery2.default)(this);
+    (0, _jquery2.default)('.overlay').addClass('mobile-overlay');
+    (0, _jquery2.default)(".mobile-menu__dropdown").removeClass('mobile-menu__dropdown--active');
+    overlay.removeClass('active');
     userLogin.addClass('user__login--active');
     (0, _jquery2.default)('.user__auth').toggleClass('active');
     (0, _jquery2.default)(document).mouseup(function (e) {
         var container = (0, _jquery2.default)(".user__auth");
-        if (container.has(e.target).length === 0) {
+        if (container.has(e.target).length === 0 && (0, _jquery2.default)('.user__forgot').has(e.target).length === 0) {
             container.removeClass('active');
             userLogin.removeClass('user__login--active');
+            (0, _jquery2.default)('.overlay').removeClass('mobile-overlay');
         }
     });
+});
+
+(0, _jquery2.default)('.user__forgot-trigger').click(function (event) {
+    event.preventDefault();
+    if ((0, _jquery2.default)('.user__auth').hasClass('active')) {
+        (0, _jquery2.default)('.user__auth').removeClass('active');
+        (0, _jquery2.default)('.user__forgot').addClass('active');
+    } else if ((0, _jquery2.default)('.user__forgot').hasClass('active')) {
+        (0, _jquery2.default)('.user__forgot').removeClass('active');
+        (0, _jquery2.default)('.user__auth').addClass('active');
+        (0, _jquery2.default)(document).mouseup(function (e) {
+            var container = (0, _jquery2.default)(".user__forgot");
+            if (container.has(e.target).length === 0 && (0, _jquery2.default)('.user__auth').has(e.target).length === 0) {
+                container.removeClass('active');
+                (0, _jquery2.default)('.user__trigger').removeClass('user__login--active');
+                (0, _jquery2.default)('.overlay').removeClass('mobile-overlay');
+            }
+        });
+    }
 });
 
 (0, _jquery2.default)('.custom-input').each(function () {
@@ -33149,175 +33123,5 @@ mobileTrigger.click(function (event) {
         });
     });
 })();
-},{"../scss/app.scss":"scss\\app.scss","jquery":"node_modules\\jquery\\dist\\jquery.js","slick-carousel":"node_modules\\slick-carousel\\slick\\slick.js","chart.js":"node_modules\\chart.js\\src\\chart.js","./lib/type":"js\\lib\\type.js"}],"..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-
-var OldModule = module.bundle.Module;
-
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-
-  module.bundle.hotData = null;
-}
-
-module.bundle.Module = Module;
-
-var parent = module.bundle.parent;
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = '' || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61028' + '/');
-  ws.onmessage = function (event) {
-    var data = JSON.parse(event.data);
-
-    if (data.type === 'update') {
-      console.clear();
-
-      data.assets.forEach(function (asset) {
-        hmrApply(global.parcelRequire, asset);
-      });
-
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          hmrAccept(global.parcelRequire, asset.id);
-        }
-      });
-    }
-
-    if (data.type === 'reload') {
-      ws.close();
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-
-      removeErrorOverlay();
-    }
-
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-
-      removeErrorOverlay();
-
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-  if (overlay) {
-    overlay.remove();
-  }
-}
-
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID;
-
-  // html encode message and stack trace
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-
-  return overlay;
-}
-
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return [];
-  }
-
-  var parents = [];
-  var k, d, dep;
-
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-
-  return parents;
-}
-
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-
-function hmrAccept(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-
-  if (!modules[id] && bundle.parent) {
-    return hmrAccept(bundle.parent, id);
-  }
-
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-
-  delete bundle.cache[id];
-  bundle(id);
-
-  cached = bundle.cache[id];
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-    return true;
-  }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAccept(global.parcelRequire, id);
-  });
-}
-},{}]},{},["..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js","js\\app.js"], null)
-//# sourceMappingURL=/app.9a4fec0b.map
+},{"../scss/app.scss":"tUkn","jquery":"QRCz","slick-carousel":"mcYC","chart.js":"ECCz","./lib/type":"3+j1"}]},{},["29uZ"], null)
+//# sourceMappingURL=/app.4cf5581b.map

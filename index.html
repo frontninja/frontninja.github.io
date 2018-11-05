@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh">
   <title>E-Global Lineage 2 Project</title>
   <!-- <link rel="stylesheet" href="css/app.css"> -->
-<link rel="stylesheet" href="/app.9a4fec0b.css"></head>
+<link rel="stylesheet" href="/app.7643e12c.css"></head>
 
 <body>
   <div class="overlay"></div>
@@ -15,9 +16,107 @@
 
     <div class="content">
       <header class="header">
+        <div class="container">
+          <div class="user__auth">
+            <div class="user__tabs">
+              <div class="user__tab active">
+                Регистрация
+              </div>
+              <div class="user__tab">
+                Вход
+              </div>
+            </div>
+            <div class="user__sign-up user__content active">
+              <form class="ca-content__form">
+                <div class="input-box">
+                  <p class="input-box__title">Логин</p>
+                  <div class="custom-input">
+                    <a href="#" class="custom-input__add">HGE</a>
+                    <input type="text" name="login" id="" placeholder="Придумай логин" class="custom-input__input input" required="">
+                  </div>
+                </div>
+                <div class="input-box">
+                  <p class="input-box__title">E-mail</p>
+                  <input type="text" class="input input-box__input">
+                </div>
+                <div class="input-box">
+                  <p class="input-box__title">Пароль</p>
+                  <div class="custom-input">
+                    <input type="password" name="" id="custom-input__password" class="input" placeholder="Придумай сложный пароль" required="">
+                    <div class="custom-input__eye"><img src="/eye.3db2a8f6.png" draggable="false" alt="eye icon"></div>
+                  </div>
+                  <p class="input-box__info"><svg width="5" height="14" viewbox="0 0 5 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.16712 10H0.833897C0.608159 10 0.412838 10.0721 0.247843 10.2159C0.0829854 10.3599 0.000488281 10.5302 0.000488281 10.7272V13.2726C0.000488281 13.4696 0.0829854 13.6401 0.247843 13.7842C0.412974 13.9279 0.608113 14 0.833897 14H4.1674C4.39277 14 4.58818 13.9279 4.75332 13.7842C4.91795 13.6401 5.00049 13.4696 5.00049 13.2726V10.7272C5.00049 10.5303 4.91781 10.3599 4.753 10.2159C4.58805 10.072 4.39263 10 4.16712 10Z" fill="#2B2B2B"></path>
+                      <path d="M4.80281 0.190824C4.66396 0.0637487 4.497 0 4.30172 0H0.699016C0.503894 0 0.337007 0.0637487 0.198079 0.190824C0.0592299 0.318075 -0.00642872 0.468827 0.00106385 0.642905L0.316225 8.35695C0.323718 8.53103 0.400576 8.68189 0.546996 8.80893C0.693338 8.93632 0.86409 9 1.05929 9H3.94184C4.13672 9 4.30744 8.93632 4.45413 8.80893C4.60044 8.68192 4.67706 8.53107 4.6849 8.35695L4.99987 0.642905C5.00768 0.468827 4.9417 0.318216 4.80281 0.190824Z" fill="#2B2B2B"></path>
+                    </svg>
+                    Пароль должен содержать не менее 8 символов</p>
+                </div>
+                <button type="submit" class="button full-width user__button">Создать аккаунт</button>
+              </form>
+
+              <div class="ca-content__privacy">
+                Регистрируясь, вы соглашаетесь с <br>
+                <a href="#" class="link ">Пользовательским соглашением</a> и <a href="#" class="link">G2A.PAY</a>
+              </div>
+            </div>
+            <div class="user__sign-in user__content">
+              <div class="input-box">
+                <p class="input-box__title">Префикс + Логин</p>
+                <input type="text" class="input input-box__input">
+                <p class="input-box__info">Например: HGEAlexDarkStalker98</p>
+              </div>
+              <div class="input-box">
+                <p class="input-box__title">Пароль</p>
+                <div class="custom-input">
+                  <input type="password" name="" id="custom-input__password" class="input" placeholder="Придумай сложный пароль" required="">
+                  <div class="custom-input__eye"><img src="/eye.3db2a8f6.png" draggable="false" alt="eye icon"></div>
+                </div>
+              </div>
+              <div class="input-box">
+                <label class="box">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  Запомнить меня
+                </label>
+              </div>
+              <button type="submit" class="button full-width user__button">Войти</button>
+              <a href="#" class="sublink user__forgot-trigger">Забыли пароль?</a>
+              <div class="user__else">или войти через</div>
+              <div class="user__buttons">
+                <a href="#" class="button facebook">Facebook</a>
+                <a href="#" class="button google">Google</a>
+              </div>
+            </div>
+          </div>
+          <div class="user__forgot">
+            <span class="user__title">Восстановление пароля</span>
+            <div class="user__cont">
+              <span class="user__subtitle">Укажите почту при регистрации</span>
+              <form action="">
+                <div class="input-box">
+                  <p class="input-box__title">E-mail</p>
+                  <input type="text" class="input input-box__input">
+                </div>
+                <button type="submit" class="button full-width user__button">Отправить пароль на почту</button>
+                <a href="#" class="sublink user__forgot-trigger">Я вспомнил пароль</a>
+              </form>
+            </div>
+            <div class="user__cont">
+              <img src="/chheck.6d63ad84.png" alt="">
+              <div class="user__forgot-text">Ваш пароль был отправлен
+                на указанную вами почту</div>
+            </div>
+            <div class="user__else">или войти через</div>
+            <div class="user__buttons">
+              <a href="#" class="button facebook">Facebook</a>
+              <a href="#" class="button google">Google</a>
+            </div>
+
+          </div>
+        </div>
         <div class="topline">
           <div class="container topline__container">
-            <a href="#" class="logo topline__logo"><img src="/logo.a39540e5.png" class="logo__img" srcset="/logo.a39540e5.png 1x,/logo@2x.cd576a19.png 2x" alt="E-Global logo Lineage 2 Project"></a>
+            <a href="#" class="logo topline__logo"><img src="/logo.4e4ace80.png" class="logo__img" srcset="/logo.4e4ace80.png 1x,/logo@2x.8870358d.png 2x" alt="E-Global logo Lineage 2 Project"></a>
             <nav class="menu">
               <ul class="menu__ul">
                 <li class="menu__list menu__list--dropdown">
@@ -77,77 +176,6 @@
             <div class="topline__right">
               <div class="user">
                 <a href="#" class="user__login user__trigger"></a>
-                <div class="user__auth">
-                  <div class="user__tabs">
-                    <div class="user__tab active">
-                      Регистрация
-                    </div>
-                    <div class="user__tab">
-                      Вход
-                    </div>
-                  </div>
-                  <div class="user__sign-up user__content active">
-                    <form class="ca-content__form">
-                      <div class="input-box">
-                        <p class="input-box__title">Логин</p>
-                        <div class="custom-input">
-                          <a href="#" class="custom-input__add">HGE</a>
-                          <input type="text" name="login" id="" placeholder="Придумай логин" class="custom-input__input input" required="">
-                        </div>
-                      </div>
-                      <div class="input-box">
-                        <p class="input-box__title">E-mail</p>
-                        <input type="text" class="input input-box__input">
-                      </div>
-                      <div class="input-box">
-                        <p class="input-box__title">Пароль</p>
-                        <div class="custom-input">
-                          <input type="password" name="" id="custom-input__password" class="input" placeholder="Придумай сложный пароль" required="">
-                          <div class="custom-input__eye"><img src="/eye.379b0fe5.png" draggable="false" alt="eye icon"></div>
-                        </div>
-                        <p class="input-box__info"><svg width="5" height="14" viewbox="0 0 5 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.16712 10H0.833897C0.608159 10 0.412838 10.0721 0.247843 10.2159C0.0829854 10.3599 0.000488281 10.5302 0.000488281 10.7272V13.2726C0.000488281 13.4696 0.0829854 13.6401 0.247843 13.7842C0.412974 13.9279 0.608113 14 0.833897 14H4.1674C4.39277 14 4.58818 13.9279 4.75332 13.7842C4.91795 13.6401 5.00049 13.4696 5.00049 13.2726V10.7272C5.00049 10.5303 4.91781 10.3599 4.753 10.2159C4.58805 10.072 4.39263 10 4.16712 10Z" fill="#2B2B2B"></path>
-                            <path d="M4.80281 0.190824C4.66396 0.0637487 4.497 0 4.30172 0H0.699016C0.503894 0 0.337007 0.0637487 0.198079 0.190824C0.0592299 0.318075 -0.00642872 0.468827 0.00106385 0.642905L0.316225 8.35695C0.323718 8.53103 0.400576 8.68189 0.546996 8.80893C0.693338 8.93632 0.86409 9 1.05929 9H3.94184C4.13672 9 4.30744 8.93632 4.45413 8.80893C4.60044 8.68192 4.67706 8.53107 4.6849 8.35695L4.99987 0.642905C5.00768 0.468827 4.9417 0.318216 4.80281 0.190824Z" fill="#2B2B2B"></path>
-                          </svg>
-                          Пароль должен содержать не менее 8 символов</p>
-                      </div>
-                      <button type="submit" class="button full-width user__button">Создать аккаунт</button>
-                    </form>
-
-                    <div class="ca-content__privacy">
-                      Регистрируясь, вы соглашаетесь с <br>
-                      <a href="#" class="link ">Пользовательским соглашением</a> и <a href="#" class="link">G2A.PAY</a>
-                    </div>
-                  </div>
-                  <div class="user__sign-in user__content">
-                    <div class="input-box">
-                      <p class="input-box__title">Префикс + Логин</p>
-                      <input type="text" class="input input-box__input">
-                      <p class="input-box__info">Например: HGEAlexDarkStalker98</p>
-                    </div>
-                    <div class="input-box">
-                      <p class="input-box__title">Пароль</p>
-                      <div class="custom-input">
-                        <input type="password" name="" id="custom-input__password" class="input" placeholder="Придумай сложный пароль" required="">
-                        <div class="custom-input__eye"><img src="/eye.379b0fe5.png" draggable="false" alt="eye icon"></div>
-                      </div>
-                    </div>
-                    <div class="input-box">
-                      <label class="box">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Запомнить меня
-                      </label>
-                    </div>
-                    <button type="submit" class="button full-width user__button">Войти</button>
-                    <a href="#" class="sublink">Забыли пароль?</a>
-                    <div class="user__else">или войти через</div>
-                    <div class="user__buttons">
-                      <a href="#" class="button facebook">Facebook</a>
-                      <a href="#" class="button google">Google</a>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div class="lang-box">
                 <div class="lang">
@@ -168,9 +196,10 @@
             </div>
           </div>
         </div>
+
         <div class="mobile-topline">
           <div class="container mobile-topline__container">
-            <a href="#" class="logo mobile__logo"><img src="/logo.a39540e5.png" class="logo__img" srcset="/logo.a39540e5.png 1x,/logo@2x.cd576a19.png 2x" alt="E-Global logo Lineage 2 Project"></a>
+            <a href="#" class="logo mobile__logo"><img src="/logo.4e4ace80.png" class="logo__img" srcset="/logo.4e4ace80.png 1x,/logo@2x.8870358d.png 2x" alt="E-Global logo Lineage 2 Project"></a>
             <div class="mobile-menu">
               <a href="#" class="mobile-menu__trigger"><svg width="30" height="20" viewbox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H30V16.6667H0V20ZM0 11.6667H30V8.33333H0V11.6667ZM0 0V3.33333H30V0H0Z" fill="#7D7D7D"></path>
@@ -239,8 +268,8 @@
                   </li>
                   <li class="mobile-menu__list">
                     <a href="#" class="mobile-menu__sublink user__trigger">
-                      <img src="/user.11c6f16f.png" alt="E-Global">
-                       Войти в аккаунт</a>
+                      <img src="/user.72efe625.png" alt="E-Global">
+                      Войти в аккаунт</a>
                   </li>
                 </ul>
               </nav>
@@ -250,7 +279,8 @@
         </div>
         <div class="container">
           <div class="screen">
-            <h2 class="screen__title split textData" data-to-animate="[ &quot; Interlude x25&quot;, &quot; Glory World 2.5&quot;, &quot; Interlude x7&quot;, &quot; Gracia Final x7&quot;, &quot; Более 2 000 000 аккаунтов&quot;]">E-Global — </h2>
+            <h2 class="screen__title split textData" data-to-animate="[ &quot; Interlude x25&quot;, &quot; Glory World 2.5&quot;, &quot; Interlude x7&quot;, &quot; Gracia Final x7&quot;, &quot; Более 2 000 000 аккаунтов&quot;]">E-Global
+              — </h2>
             <p class="screen__subtitle">
               Присоединяйся к нам!
             </p>
@@ -264,7 +294,7 @@
               <div class="tab__header active">
                 <div class="s-info">
                   <div class="s-info__img">
-                    <img src="/Kamael.f7e1c20c.png" alt="E-Global">
+                    <img src="/Kamael.a2e7466a.png" alt="E-Global">
                   </div>
                   <div class="s-info__content">
                     <span class="s-info__subtitle">ПРО BIGWAR!</span>
@@ -297,7 +327,7 @@
                       персонажей.</p>
                     <a href="#" class="button second">Подробнее</a><br>
 
-                    <div class="s-content__special">Все особенности сервера за <i class="big-number">18</i> секунд!<a href="#" class="button">Посмотреть<i class="icon icon_next"></i></a>
+                    <div class="s-content__special">Все особенности сервера за <i class="big-number">18</i> секунд!<a href="#" class="button slider-go">Посмотреть<i class="icon icon_next"></i></a>
                     </div>
                   </div>
                 </div>
@@ -305,27 +335,27 @@
                   <div class="s-slider">
                     <div class="s-slider__wrapper">
                       <div class="s-slider__slide">
-                        <div class="s-slider__box" style="background-image: url('Rectangle.png');">
-                          <div class="s-slider__tooltip">
-                            CLAN UNITY
-                          </div>
-                          <div class="s-slider__info">
-                            Новый бафф <b>“Clan Unity”</b><br>
-                            автоматически накладывается каждые 5 минут<br>
-                            на персонажей в клане
-                          </div>
-                        </div>
-                      </div>
-                      <div class="s-slider__slide">
                         <div class="s-slider__box" style="background-image: url('chartBg.jpg');">
                           <div class="s-slider__tooltip">
                             Статистика игроков онлайн
                           </div>
                           <div class="s-slider__chart">
-                            <canvas id="myChart" width="400" height="400"></canvas>
+                            <canvas class="chart" width="400" height="400"></canvas>
                           </div>
                         </div>
                       </div>
+                      <div class="s-slider__slide">
+                          <div class="s-slider__box" style="background-image: url('Rectangle.png');">
+                            <div class="s-slider__tooltip">
+                              CLAN UNITY
+                            </div>
+                            <div class="s-slider__info">
+                              Новый бафф <b>“Clan Unity”</b><br>
+                              автоматически накладывается каждые 5 минут<br>
+                              на персонажей в клане
+                            </div>
+                          </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -335,7 +365,7 @@
               <div class="tab__header">
                 <div class="s-info">
                   <div class="s-info__img">
-                    <img src="/Human.7d2483ec.png" alt="E-Global">
+                    <img src="/Human.8eb87fb5.png" alt="E-Global">
                   </div>
                   <div class="s-info__content">
                     <span class="s-info__subtitle">НЕОБЫЧНАЯ КОНЦЕПЦИЯ!</span>
@@ -352,7 +382,7 @@
               <div class="tab__header ">
                 <div class="s-info">
                   <div class="s-info__img">
-                    <img src="/Elf.6b304c6d.png" alt="E-Global">
+                    <img src="/Elf.5e67618b.png" alt="E-Global">
                   </div>
                   <div class="s-info__content">
                     <span class="s-info__subtitle">ВОЙНА ФРАКЦИЙ 24/7!</span>
@@ -392,7 +422,7 @@
                           <p class="input-box__title">Пароль</p>
                           <div class="custom-input">
                             <input type="password" name="" id="custom-input__password" class="input" placeholder="Придумай сложный пароль" required="">
-                            <div class="custom-input__eye"><img src="/eye.379b0fe5.png" draggable="false" alt="eye icon"></div>
+                            <div class="custom-input__eye"><img src="/eye.3db2a8f6.png" draggable="false" alt="eye icon"></div>
                           </div>
                           <p class="input-box__info"><svg width="5" height="14" viewbox="0 0 5 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M4.16712 10H0.833897C0.608159 10 0.412838 10.0721 0.247843 10.2159C0.0829854 10.3599 0.000488281 10.5302 0.000488281 10.7272V13.2726C0.000488281 13.4696 0.0829854 13.6401 0.247843 13.7842C0.412974 13.9279 0.608113 14 0.833897 14H4.1674C4.39277 14 4.58818 13.9279 4.75332 13.7842C4.91795 13.6401 5.00049 13.4696 5.00049 13.2726V10.7272C5.00049 10.5303 4.91781 10.3599 4.753 10.2159C4.58805 10.072 4.39263 10 4.16712 10Z" fill="#2B2B2B"></path>
@@ -616,53 +646,53 @@
         <div class="footer__main">
           <div class="footer__content">
             <div class="footer__left">
-              <a href="#" class="footer__logo"><img src="/whitelogo.86314f68.png" alt="E-Global logo"></a>
+              <a href="#" class="footer__logo"><img src="/whitelogo.cc8481c5.png" alt="E-Global logo"></a>
             </div>
             <div class="footer__second">
-                <div class="footer__item">
-                    <span class="footer__title">Меню</span>
-                    <ul class="footer__links">
-                      <li class="footer__li"><a class="footer__link" href="#">Сервера</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Файлы</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Донат</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Форум</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Рейтинг</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Стримы</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Википедия</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="footer__item">
-                    <span class="footer__title">Пользователю</span>
-                    <ul class="footer__links">
-                      <li class="footer__li"><a class="footer__link" href="#">Войти</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Создать аккаунт</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Купить монеты</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Служба поддержки</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Правила G2A.Pay</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Пользовательское соглашение</a></li>
-                      <li class="footer__li"><a class="footer__link" href="#">Политика конфиденциальности</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="footer__right">
-                    <span class="footer__title">Свяжитесь с нами</span>
-                    <div class="footer__socials">
-                      <a href="#" class="footer__social"><svg width="45" height="44" viewbox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M44.9985 7.33382C44.9985 3.4804 41.5196 0 37.6652 0H8.33187C4.47747 0 0.998535 3.4804 0.998535 7.33382V36.6662C0.998535 40.5196 4.47747 44 8.33236 44H22.9985V27.3778H17.6208V20.0444H22.9985V17.1874C22.9985 12.2599 26.6984 7.82222 31.2485 7.82222H37.1763V15.1556H31.2485C30.5998 15.1556 29.843 15.9432 29.843 17.1228V20.0444H37.1763V27.3778H29.843V44H37.6652C41.5196 44 44.9985 40.5196 44.9985 36.6662V7.33382Z" fill="white"></path>
-                        </svg>
-                      </a>
-                      <a href="#" class="footer__social"><svg width="45" height="44" viewbox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M42.6581 0H3.33896C2.04611 0 0.998535 1.04804 0.998535 2.34043V41.6596C0.998535 42.952 2.04611 44 3.33896 44H42.6581C43.951 44 44.9985 42.952 44.9985 41.6596V2.34043C44.9985 1.04804 43.951 0 42.6581 0ZM36.0436 24.7818C37.2428 25.952 38.5109 27.0539 39.5879 28.3472C40.0645 28.9183 40.5138 29.5081 40.856 30.1723C41.3433 31.1197 40.9033 32.1603 40.0541 32.216L34.7854 32.2146C33.4251 32.3264 32.342 31.7788 31.4283 30.8487C30.7004 30.1068 30.0236 29.3148 29.3219 28.5485C29.0359 28.2335 28.7326 27.9372 28.374 27.7031C27.656 27.2369 27.032 27.3792 26.6196 28.1286C26.2002 28.8916 26.1033 29.7379 26.065 30.5884C26.0064 31.8312 25.632 32.1556 24.3855 32.2132C21.7221 32.3386 19.1939 31.9342 16.8456 30.5922C14.7724 29.4079 13.1692 27.735 11.7725 25.843C9.05007 22.1531 6.96522 18.1027 5.09288 13.9363C4.67113 12.9978 4.9796 12.4955 6.0136 12.4763C7.73428 12.4422 9.45449 12.4469 11.1728 12.4745C11.8731 12.4852 12.336 12.8859 12.6042 13.5459C13.5334 15.8325 14.6736 18.0082 16.1013 20.0256C16.4819 20.5625 16.8704 21.0985 17.4227 21.4781C18.0331 21.8975 18.4984 21.7594 18.7862 21.0783C18.9702 20.644 19.0498 20.1824 19.0891 19.7181C19.2258 18.1285 19.2422 16.5389 19.0062 14.9553C18.8588 13.9649 18.3008 13.325 17.3132 13.1377C16.8105 13.0423 16.8839 12.856 17.1283 12.569C17.5524 12.0719 17.9521 11.7649 18.746 11.7649L23.538 11.7641C24.3112 11.764 25.2658 11.6661 25.6858 12.3153C25.8416 12.5561 25.9173 12.8797 25.976 13.3137L25.9816 19.9292C25.9718 20.2952 26.1647 21.3793 26.8219 21.619C27.3475 21.7926 27.6962 21.3709 28.0108 21.0367C29.4375 19.5224 30.4542 17.7339 31.3656 15.8835C31.7667 15.0677 32.1145 14.2223 32.4515 13.3765C32.701 12.7506 33.0914 12.4426 33.7973 12.4539L39.5294 12.46C39.6979 12.46 39.8707 12.4618 40.0378 12.4894C41.003 12.6556 41.2674 13.0713 40.9693 14.014C40.4993 15.4946 39.5842 16.7284 38.6892 17.9651C37.7329 19.2874 36.712 20.5663 35.7627 21.8951C34.893 23.114 34.9633 23.7263 36.0436 24.7818Z" fill="white"></path>
-                        </svg>
-                      </a>
-                      <a href="#" class="footer__social footer__social--discord"><svg width="44" height="50" viewbox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13579 0H38.8645C41.7008 0 44.0002 2.29699 44 5.13078V50L32.4828 39.3318L33.6397 43.9546H5.13579C2.29938 43.9546 0 41.6576 0 38.8242V5.13046C0 2.29699 2.29938 0 5.13579 0ZM26.042 12C30.9223 12.3205 33.0717 14.535 33.0717 14.535C36.7907 19.1965 37.0003 29.3942 37 29.3944C33.497 33.5028 29.0957 32.9783 29.0957 32.9783L27.479 30.7057C29.5639 30.1569 31.0528 28.8966 31.9477 27.9155C29.4511 29.6328 25.919 30.7057 22 30.7057C18.081 30.7057 14.5489 29.6327 12.0523 27.9155C12.9472 28.8968 14.4361 30.1569 16.521 30.7057L14.9043 32.9783C14.9043 32.9783 10.503 33.5025 7 29.3944C7 29.3944 7.20951 19.1965 10.9283 14.535C10.9283 14.535 13.0777 12.3205 17.958 12V12.6992C17.958 12.6992 15.2813 12.5479 11.9678 15.7219C14.4689 13.9707 18.0369 12.8739 22 12.8739C25.9631 12.8739 29.5311 13.9709 32.0322 15.7219C28.7187 12.5479 26.042 12.6992 26.042 12.6992V12ZM14.7846 23.8784C14.7846 25.3318 15.924 26.5099 17.3295 26.5099C18.7351 26.5099 19.8744 25.3317 19.8744 23.8784C19.8744 22.4251 18.7351 21.2469 17.3295 21.2469C15.924 21.2469 14.7846 22.4251 14.7846 23.8784ZM24.1259 23.8784C24.1259 25.3318 25.2653 26.5099 26.6708 26.5099C28.0765 26.5099 29.2157 25.3317 29.2157 23.8784C29.2157 22.4251 28.0764 21.2469 26.6708 21.2469C25.2653 21.2469 24.1259 22.4251 24.1259 23.8784Z" fill="white"></path>
-                        </svg>
-      
-                      </a>
-                    </div>
-                  </div>
+              <div class="footer__item">
+                <span class="footer__title">Меню</span>
+                <ul class="footer__links">
+                  <li class="footer__li"><a class="footer__link" href="#">Сервера</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Файлы</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Донат</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Форум</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Рейтинг</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Стримы</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Википедия</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <span class="footer__title">Пользователю</span>
+                <ul class="footer__links">
+                  <li class="footer__li"><a class="footer__link" href="#">Войти</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Создать аккаунт</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Купить монеты</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Служба поддержки</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Правила G2A.Pay</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Пользовательское соглашение</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__right">
+                <span class="footer__title">Свяжитесь с нами</span>
+                <div class="footer__socials">
+                  <a href="#" class="footer__social"><svg width="45" height="44" viewbox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M44.9985 7.33382C44.9985 3.4804 41.5196 0 37.6652 0H8.33187C4.47747 0 0.998535 3.4804 0.998535 7.33382V36.6662C0.998535 40.5196 4.47747 44 8.33236 44H22.9985V27.3778H17.6208V20.0444H22.9985V17.1874C22.9985 12.2599 26.6984 7.82222 31.2485 7.82222H37.1763V15.1556H31.2485C30.5998 15.1556 29.843 15.9432 29.843 17.1228V20.0444H37.1763V27.3778H29.843V44H37.6652C41.5196 44 44.9985 40.5196 44.9985 36.6662V7.33382Z" fill="white"></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="footer__social"><svg width="45" height="44" viewbox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M42.6581 0H3.33896C2.04611 0 0.998535 1.04804 0.998535 2.34043V41.6596C0.998535 42.952 2.04611 44 3.33896 44H42.6581C43.951 44 44.9985 42.952 44.9985 41.6596V2.34043C44.9985 1.04804 43.951 0 42.6581 0ZM36.0436 24.7818C37.2428 25.952 38.5109 27.0539 39.5879 28.3472C40.0645 28.9183 40.5138 29.5081 40.856 30.1723C41.3433 31.1197 40.9033 32.1603 40.0541 32.216L34.7854 32.2146C33.4251 32.3264 32.342 31.7788 31.4283 30.8487C30.7004 30.1068 30.0236 29.3148 29.3219 28.5485C29.0359 28.2335 28.7326 27.9372 28.374 27.7031C27.656 27.2369 27.032 27.3792 26.6196 28.1286C26.2002 28.8916 26.1033 29.7379 26.065 30.5884C26.0064 31.8312 25.632 32.1556 24.3855 32.2132C21.7221 32.3386 19.1939 31.9342 16.8456 30.5922C14.7724 29.4079 13.1692 27.735 11.7725 25.843C9.05007 22.1531 6.96522 18.1027 5.09288 13.9363C4.67113 12.9978 4.9796 12.4955 6.0136 12.4763C7.73428 12.4422 9.45449 12.4469 11.1728 12.4745C11.8731 12.4852 12.336 12.8859 12.6042 13.5459C13.5334 15.8325 14.6736 18.0082 16.1013 20.0256C16.4819 20.5625 16.8704 21.0985 17.4227 21.4781C18.0331 21.8975 18.4984 21.7594 18.7862 21.0783C18.9702 20.644 19.0498 20.1824 19.0891 19.7181C19.2258 18.1285 19.2422 16.5389 19.0062 14.9553C18.8588 13.9649 18.3008 13.325 17.3132 13.1377C16.8105 13.0423 16.8839 12.856 17.1283 12.569C17.5524 12.0719 17.9521 11.7649 18.746 11.7649L23.538 11.7641C24.3112 11.764 25.2658 11.6661 25.6858 12.3153C25.8416 12.5561 25.9173 12.8797 25.976 13.3137L25.9816 19.9292C25.9718 20.2952 26.1647 21.3793 26.8219 21.619C27.3475 21.7926 27.6962 21.3709 28.0108 21.0367C29.4375 19.5224 30.4542 17.7339 31.3656 15.8835C31.7667 15.0677 32.1145 14.2223 32.4515 13.3765C32.701 12.7506 33.0914 12.4426 33.7973 12.4539L39.5294 12.46C39.6979 12.46 39.8707 12.4618 40.0378 12.4894C41.003 12.6556 41.2674 13.0713 40.9693 14.014C40.4993 15.4946 39.5842 16.7284 38.6892 17.9651C37.7329 19.2874 36.712 20.5663 35.7627 21.8951C34.893 23.114 34.9633 23.7263 36.0436 24.7818Z" fill="white"></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="footer__social footer__social--discord"><svg width="44" height="50" viewbox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13579 0H38.8645C41.7008 0 44.0002 2.29699 44 5.13078V50L32.4828 39.3318L33.6397 43.9546H5.13579C2.29938 43.9546 0 41.6576 0 38.8242V5.13046C0 2.29699 2.29938 0 5.13579 0ZM26.042 12C30.9223 12.3205 33.0717 14.535 33.0717 14.535C36.7907 19.1965 37.0003 29.3942 37 29.3944C33.497 33.5028 29.0957 32.9783 29.0957 32.9783L27.479 30.7057C29.5639 30.1569 31.0528 28.8966 31.9477 27.9155C29.4511 29.6328 25.919 30.7057 22 30.7057C18.081 30.7057 14.5489 29.6327 12.0523 27.9155C12.9472 28.8968 14.4361 30.1569 16.521 30.7057L14.9043 32.9783C14.9043 32.9783 10.503 33.5025 7 29.3944C7 29.3944 7.20951 19.1965 10.9283 14.535C10.9283 14.535 13.0777 12.3205 17.958 12V12.6992C17.958 12.6992 15.2813 12.5479 11.9678 15.7219C14.4689 13.9707 18.0369 12.8739 22 12.8739C25.9631 12.8739 29.5311 13.9709 32.0322 15.7219C28.7187 12.5479 26.042 12.6992 26.042 12.6992V12ZM14.7846 23.8784C14.7846 25.3318 15.924 26.5099 17.3295 26.5099C18.7351 26.5099 19.8744 25.3317 19.8744 23.8784C19.8744 22.4251 18.7351 21.2469 17.3295 21.2469C15.924 21.2469 14.7846 22.4251 14.7846 23.8784ZM24.1259 23.8784C24.1259 25.3318 25.2653 26.5099 26.6708 26.5099C28.0765 26.5099 29.2157 25.3317 29.2157 23.8784C29.2157 22.4251 28.0764 21.2469 26.6708 21.2469C25.2653 21.2469 24.1259 22.4251 24.1259 23.8784Z" fill="white"></path>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -670,12 +700,12 @@
             NCSoft</div>
         </div>
         <div class="footer__bottom">
-          <img src="/pays.1eb7d3ec.png" alt="E-Global">
+          <img src="/pays.dd7f3b49.png" alt="E-Global">
         </div>
       </div>
     </div>
   </div>
-  <script src="/app.9a4fec0b.js"></script>
+  <script src="/app.14f2cd34.js"></script>
 </body>
 
 </html>
